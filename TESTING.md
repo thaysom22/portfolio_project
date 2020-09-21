@@ -1,4 +1,4 @@
-# Thomas Haysom - Porfolio and Blog (Testing)
+# Thomas Haysom - Porfolio and Blog Website (Testing)
 
 Link back to main README.md file
 Link to live deployed site
