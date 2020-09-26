@@ -1,12 +1,12 @@
 # Thomas Haysom - Porfolio and Blog Website
 
-A fully responsive, mobile first website:
+A professional and personalized, fully responsive mobile first website:
 
-* displaying my own resume (work history, education, skills, qualifications) 
+* displaying the owner's (my) resume (work history, education, skills, qualifications) 
 * presenting and linking to my coding projects on github.com
 * presenting and linking to my blog posts on medium.com
 * providing links to my professional social media accounts
-* displaying a contact form 
+* displaying a contact form with my contact details
 
 ### Link to live site
 
@@ -18,14 +18,22 @@ The owner's (my) goals for the site:
 
 * To present my skills, experience, qualifications and abilities in a clear, convenient format to potential
 employers and clients. 
-* To provide a postive user experience to all users of the site and help establish a postive reputation for myself as
-a developer and designer.
+* To provide a positive user experience to all users of the site and help establish a positive reputation for myself as
+a developer and web designer.
 * To provide a convenient way for potential employers/clients/collaborators/developers to contact me
 so that I increase job opportunities, expand my network and  industry connections.
 * To present my projects to potential colaborators and other developers so I increase my followers and collaboration
 via GitHub and receive more feedback and suggestions.
 * To present a selection of my blog posts primarily to other developers with a similar level of skills
-and experience to me; secondly to potential employers to evidence my accomplished communication skills. 
+and experience to me so that I contribute in a small way to help others learn and grow and I benefit myself 
+through comments and interactions; secondly to potential employers to evidence my accomplished communication skills
+so I am more likely to be hired or recommended for projects. 
+
+This site facilitates the realisation of these owner's goals better than alternatives by:
+
+* 
+*
+*
 
 ### User goals
 
@@ -45,14 +53,15 @@ and link to them easily on GitHub, amy also want to contact me to connect.
 
 User stories:
 
-* Potential employer/client/collaborator: wants to find out about my qualifications, experience and 
-previous projects so they can evaluate my skill level and knowledge relative to the needs of their organization/project. 
-* Potential employer/client/collaborator: wishes to contact me or to connect with me online so they can make
-an enquiry about a job/project.
-* Coding student/learner/enthusiast: wants to browse and read my blog posts and view my projects to potentially learn more 
+* A potential employer/client/collaborator: wants to find out about my qualifications, experience and 
+previous projects, and contact me if necessary, so they can conveniently evaluate my skill level and knowledge 
+relative to the needs of their organization/project. 
+* A potential client/collaborator: wishes to view the nature and quality of my projects, and contact me or to connect
+with me online so they can make an proposal/enquiry about a job/project.
+* A coding student/learner/enthusiast: wants to browse and read my blog posts and view my projects to potentially learn more 
 about a topic that interests them, or get ideas/reflections from someone in a similar situation, with similar career goals.  
 
-This site helps it's users to acheive their goals better than other means by:
+This site facilitates the realisation of these various user's goals better than alternatives by:
 
 * Providing a simple, intuitive user interface that facilatiates easy navigation to desired content
 * Separating resume, projects and blog features of site to avoid overloading users with information and 
@@ -78,16 +87,7 @@ a front end developer
 
 ### Links to wireframe mockups
 
-[Balsamiq workspace - whole site](https://balsamiq.cloud/srw51v6/pyy1b67)
-
-Individual page wireframes (pdf):
-
-[Home]()
-[Blog]()
-[Resume]()
-[Projects]()
-[Contact]()
-
+[Wireframes for all pages](portfolio_project_wireframes.pdf) (pdf)
 
 ## Features
 
