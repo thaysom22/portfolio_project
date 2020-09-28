@@ -1,5 +1,19 @@
 /* --- Normalization style rules --- */
 
-/* ??? */
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/* --- Header --- */
+
+header .logo-wrapper{
+    padding: 10px;
+}
+
+header img,header i{
+    display: block;
+    height: 50px;
+    width: 50px;
+}
 
