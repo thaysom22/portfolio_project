@@ -14,32 +14,43 @@
 <!-- Header -->
 <header>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row no-gutters header-row align-items-center">
             <!-- Logo -->
             <div class="col-6 p-0">
                 <div class="logo-wrapper">
                     <a href="index.html">
-                        <img src="assets/images/TH_DEV_logo.png" alt="Personal logo icon - 'TH DEV'">
+                        <img class="logo" src="assets/images/TH_DEV_logo.png" alt="Personal logo icon-'TH DEV'">
                     </a>
                 </div>
             </div>
             <!-- /Logo -->
-            <!-- Navbar -->
-            <div class="col-6 p-0">
-                <div class="row">
-                    <!-- Hamburger icon on mobile view -->
-                    <div class="col p-0 d-md-none">
-                        <div class="hamburger-icon-wrapper">
-                        <i class="fas fa-bars hamburger-icon"></i>
-                        </div>
-                    </div>
-                    <!-- /Hamburger icon on mobile view -->
+            <!-- Menu -->
+            <!-- Hamburger icon on mobile view -->
+            <div class="col-6 p-0 d-md-none">
+                <div class="hamburger-icon-wrapper">
+                    <i class="fas fa-bars hamburger-icon"></i>
                 </div>
             </div>
-            <!-- /Navbar -->
+            <!-- /Hamburger icon on mobile view -->
+            <!-- Expanded navbar (CREDIT: Bootstrap docs) -->
+            <div class="col-6 d-none d-md-block">
+                <nav class="navbar navbar-wrapper">
+                    <div class="navbar-nav nav-links-wrapper">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="projects.html" class="nav-link">Projects</a>
+                            <a href="blog.html" class="nav-link">Blog</a>                       
+                            <a href="resume.html" class="nav-link">Resume</a>
+                            <a href="contact.html" class="nav-link">Contact</a>   
+                    </div>
+                </nav>
+            </div>
+            <!-- /Expanded navbar -->
+
+            <!-- /Menu -->
         </div>
-    
     </div>
+    
+  
 
 </header>
 

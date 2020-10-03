@@ -7,13 +7,41 @@
 
 /* --- Header --- */
 
-header .logo-wrapper{
-    padding: 10px;
+.header-row{
+    height: 100px;   
 }
 
-header img,header i{
+header .logo-wrapper, 
+header .hamburger-icon-wrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header .hamburger-icon-wrapper{
+    text-align: right;
+    height: 50px;
+}
+
+header .logo-wrapper .logo, header .logo-wrapper a{
     display: block;
     height: 50px;
     width: 50px;
+}
+
+header .hamburger-icon{
+    font-size: 50px;
+}
+
+.header-row .navbar-wrapper,.header-row .nav-links-wrapper{
+    flex-flow: row nowrap;
+}
+
+.header-row .navbar-wrapper{
+    justify-content: center;
+}
+
+.header-row .nav-links-wrapper{
+    width: 100%;
+    justify-content: space-around;
 }
 
