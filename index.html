@@ -12,8 +12,8 @@
 </head>
 <body>
 <!-- Header -->
-<header class="container-fluid header-wrapper">
-    
+<header class="container-fluid header-wrapper p-0 px-sm-2">
+    <!-- Navbar -->
     <div class="row no-gutters header-row align-items-center">
         <!-- Logo -->
         <div class="col-6 p-0">
@@ -24,21 +24,22 @@
             </div>
         </div>
         <!-- /Logo -->
-        <!-- Menu -->
-        <!-- Hamburger dropdown trigger on mobile view -->
+        <!-- Collapsed navbar (CREDIT: Bootstrap docs)-->
         <div class="col-6 p-0 d-md-none">
-            <div class="hamburger-column-wrapper">
-                <div type="button" class="hamburger-icon-wrapper" data-toggle="modal" data-target="#menu-modal">
+            <nav class="collapsed-navbar-wrapper navbar">
+                <!-- Navbar toggler icon -->
+                <div type="button" class="hamburger-icon-wrapper navbar-toggler" data-toggle="collapse" data-target="#navbar-toggled" aria-label="Toggle navbar" aria-expanded="false" aria-controls="navbar-toggled">
                     <i class="fas fa-bars hamburger-icon"></i>
                 </div>
-                <!-- Contact modal trigger -->
-                <div type="button" id="contact-modal-trigger" class="nav-link" data-dismiss="modal" data-toggle="modal" data-target="#contact-modal">
+                <!-- /Navbar toggler icon -->
+                <!-- Contact modal trigger button -->
+                <div type="button" id="small-contact-modal-trigger" class="nav-link" data-dismiss="modal" data-toggle="modal" data-target="#contact-modal">
                     Contact
                 </div>
-                <!-- /Contact modal trigger -->
-            </div>
+                <!-- /Contact modal trigger button -->
+            </nav>
         </div>
-        <!-- /Hamburger modal trigger on mobile view -->
+        <!-- /Collapsed navbar (CREDIT: Bootstrap docs)-->
         <!-- Expanded navbar (CREDIT: Bootstrap docs) -->
         <div class="col-6 d-none d-md-block">
             <nav class="navbar navbar-wrapper">
@@ -48,7 +49,7 @@
                         <a href="blog.html" class="nav-link">Blog</a>                       
                         <a href="resume.html" class="nav-link">Resume</a>
                         <!-- Contact modal trigger -->
-                        <div type="button" class="nav-link contact-modal-trigger" data-toggle="modal" data-target="#contact-modal">
+                        <div type="button" class="nav-link" data-toggle="modal" data-target="#contact-modal">
                             Contact
                         </div>
                         <!-- /Contact modal trigger    -->
@@ -56,56 +57,48 @@
             </nav>
         </div>
         <!-- /Expanded navbar -->
-        <!-- Menu Modal (CREDIT: Bootstrap docs) -->
-        <div class="modal fade" id="menu-modal" tabindex="-1" aria-labelledby="menu-modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu-modal-title">Menu</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span class="modal-dismiss-button" aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <nav class="navbar navbar-wrapper">
-                            <div class="navbar-nav nav-links-wrapper">
-                                <a href="index.html" class="nav-link">Home</a>
-                                <a href="projects.html" class="nav-link">Projects</a>
-                                <a href="blog.html" class="nav-link">Blog</a>                       
-                                <a href="resume.html" class="nav-link">Resume</a>  
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Menu Modal -->
-        <!-- Contact Modal (CREDIT: Bootstrap docs) -->
-        <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="contact-modal-title">Contact</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span class="modal-dismiss-button" aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Contact Modal -->
-        <!-- /Menu -->
-
     </div>
-    
-  
-
+    <!-- /Navbar -->
+    <!-- Toggled menu -->
+    <div class="row no-gutters toggled-menu-row">
+        <div class="collapse navbar-collapse" id="navbar-toggled">
+            <ul class="navbar-nav toggled-nav-links-wrapper">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>  
+                </li>
+                <li class="nav-item">                     
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /Toggled menu -->
+    <!-- Contact Modal (CREDIT: Bootstrap docs) -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contact-modal-title">Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="modal-dismiss-button" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Contact Modal -->
 </header>
-
 <!-- /Header -->
+
 <!-- Hero section -->
 
 <!-- /Hero section -->
