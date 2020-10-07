@@ -14,20 +14,10 @@ body{
 
 }
 
-
 /* --- Temp colors for layout editing --- */
 
 
-
-
-
-
-
 /* --- Header --- */
-
-.header-wrapper{
-    padding: 0 10px;
-}
 
 .header-row{
     height: 80px;   
@@ -135,4 +125,17 @@ header .modal-dialog{
         height: 38px;
         line-height: 30.8px;
     }
+}
+
+/* --- Hero section --- */
+
+#hero-image{
+    height: calc(100vh - 160px);
+    width: 100%;
+    /* CREDIT: unsplash */
+    background-image: url("../images/dog_looking_at_screen.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+
 }
