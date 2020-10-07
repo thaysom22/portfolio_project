@@ -136,6 +136,6 @@ header .modal-dialog{
     background-image: url("../images/dog_looking_at_screen.jpg"); 
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100%;
+    background-size: cover;
 
 }
