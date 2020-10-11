@@ -80,16 +80,27 @@
     </div>
     <!-- /Toggled menu -->
     <!-- Contact Modal (CREDIT: Bootstrap docs) -->
-    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal" aria-hidden="true">
+    <div class="modal fade" id="contact-modal" data-backdrop="static" tabindex="-1" aria-labelledby="contact-modal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contact-modal-title">Contact</h5>
+                    <h5 class="modal-title" id="contact-modal-title">Contact me</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="modal-dismiss-button" aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
+                    <!-- Contact form -->
+                    <form autocomplete="on">
+                        <input type="text" id="first_name" name="fname" placeholder="First Name" aria-labelled="First Name" required autofocus>
+                        <input type="text" id="last_name" name="lname" placeholder="Last Name" aria-labelled="Last Name" required>
+                        <!-- Credit: https://www.regular-expressions.info/email.html for pattern attribute regex -->
+                        <input type="email" id="email" name="email" placeholder="Email Address" aria-labelled="Email Address" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number (optional)" aria-labelled="Phone Number">
+                        <textarea name="message" id="message" cols="23" rows="10" placeholder="Type your message here, I will reply ASAP!"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                    <!-- /Contact form -->
                     
                 </div>
             </div>

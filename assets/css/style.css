@@ -160,6 +160,12 @@ header .modal-dialog{
 
 }
 
+/* --- Contact modal --- */
+
+.modal-content{
+    height: calc(100vh - 90px);
+}
+
 /* --- Hero section --- */
 
 #hero-section-wrapper{
