@@ -123,10 +123,6 @@ header .hamburger-icon{
 }
 
 
-header .modal-dialog{
-    margin-top: 80px;
-}
-
 #small-contact-modal-trigger{
     width: 66px;
     margin: auto 5px auto 1%;
@@ -163,7 +159,29 @@ header .modal-dialog{
 /* --- Contact modal --- */
 
 .modal-content{
-    height: calc(100vh - 90px);
+    height: calc(100vh - 110px);
+    background-color: #0e1c36;
+    opacity: 0.8;
+    border-radius: 1rem;
+}
+
+.modal-dialog{
+    margin-bottom: 10px;
+    margin-top: 90px;
+}
+
+.modal-header{
+    align-items: center;
+}
+
+.modal-header h5, .modal-header span{
+    color: #9f7e69;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modal-header span{
+    font-size: 3rem;
 }
 
 /* --- Hero section --- */
