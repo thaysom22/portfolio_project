@@ -159,7 +159,6 @@ header .hamburger-icon{
 /* --- Contact modal --- */
 
 .modal-content{
-    height: calc(100vh - 110px);
     background-color: #0e1c36;
     opacity: 0.8;
     border-radius: 1rem;
@@ -184,6 +183,31 @@ header .hamburger-icon{
     font-size: 3rem;
 }
 
+.contact-form-element{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.contact-form-element:not(#contact-form-submit){
+    border-radius: 5px;
+}
+
+#contact-form-submit{
+    background-color: #9f7e69;
+    color: #0e1c36;
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 600px;
+    }
+
+    .contact-form-element#message{
+        width: 400px;
+    }
+
+}
 /* --- Hero section --- */
 
 #hero-section-wrapper{
