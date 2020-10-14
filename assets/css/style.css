@@ -208,7 +208,7 @@ header .hamburger-icon{
     }
 
 }
-/* --- Hero section --- */
+/* --- Home hero section --- */
 
 #hero-section-wrapper{
     position: relative;
@@ -308,7 +308,7 @@ header .hamburger-icon{
     }
 }
 
-/* --- Main sections --- */
+/* --- Home main sections --- */
 
 #main-content-row{
     margin: 50px 0;
@@ -365,6 +365,12 @@ header .hamburger-icon{
     .main-content-wrapper p{
         min-height: 6em;  
     }
+}
+
+/* Resume main sections */
+
+.resume-item-location{
+    display: block;
 }
 
 /* --- Footer --- */
