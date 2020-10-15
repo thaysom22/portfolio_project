@@ -399,6 +399,7 @@ header .hamburger-icon{
     font-size: 1.25em;
 }
 
+
 #employments-inner-wrapper{
     border-left: solid rgba(14,28,54,.6) 3px;
     padding-left: 1em;
@@ -428,9 +429,79 @@ header .hamburger-icon{
 
 #more-about-image-wrapper>img{
     width: 60%;
-    max-width: 300px;
-    margin: 2em auto 1em auto;
+    max-width: 400px;
+    margin: 2em auto 2em auto;
     display: block;
+}
+
+@media (min-width: 768px){
+    
+    #work-history-wrapper,#education-wrapper{
+        margin-bottom: 2em;
+    }
+
+    #employments-inner-wrapper{
+        border: solid rgba(14,28,54,.6) 3px;
+        padding-right: 1em; 
+    }
+
+    #qualifications-inner-wrapper{
+        border: solid rgba(14,28,54,.6) 3px;
+        padding-left: 1em; 
+    }
+
+    #work-history-header-wrapper,#education-header-wrapper{
+        justify-content: center;
+    }
+
+    #skills-header-wrapper h4,#more-about-header-wrapper h4{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .skill-header-wrapper h6{
+        padding-left: 1rem;
+    }
+
+
+    .skill-text-wrapper>.resume-item-description{
+        margin-top: 0;
+    }
+
+    .skill{
+        margin: 2em 0;
+    }
+
+    #more-about-text-wrapper{
+        margin: auto 0;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    #more-about-text-wrapper>.resume-item-description{
+        font-size: 1.125em;
+        padding-left: 1em;
+    }
+
+    .skill-text-wrapper>.resume-item-description{
+        padding-left: 1em;
+    }
+
+    #skills-inner-wrapper{
+        border: solid rgba(14,28,54,.6) 3px;
+    }
+
+    #skills-header-wrapper{
+        justify-content: center;
+    }
+
+    /* margin-bottom is 2em to fix collapsing margins */
+    .skill {
+    margin: 1em 0 2em 0;
+    }
+
 }
 
 /* --- Footer --- */
