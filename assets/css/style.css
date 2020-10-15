@@ -504,6 +504,24 @@ header .hamburger-icon{
 
 }
 
+/* --- Blog --- */
+
+#blog-page-header{
+    margin-bottom: 1em;
+    background-color: #0e1c36;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#blog-page-header>h4{
+    color:#f5f5f5;
+    margin: 0;
+}
+
+#blog-page-header span{
+    color:#9f7e69;
+}
+
 /* --- Footer --- */
 
 .footer-row{

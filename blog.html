@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Haysom | Developer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/623db69bf7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Header -->
+<header class="container-fluid p-0 px-sm-2">
+    <!-- Navbar -->
+    <div class="row no-gutters header-row align-items-center">
+        <!-- Logo -->
+        <div class="col-6 p-0" id="logo-col">
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img class="logo" src="assets/images/TH_DEV_logo.png" alt="Personal logo icon-'TH DEV'">
+                </a>
+            </div>
+        </div>
+        <!-- /Logo -->
+        <!-- Collapsed navbar (CREDIT: Bootstrap docs)-->
+        <div class="col-6 p-0 d-sm-none">
+            <nav class="collapsed-navbar-wrapper navbar">
+                <!-- Navbar toggler icon -->
+                <div type="button" class="hamburger-icon-wrapper navbar-toggler" data-toggle="collapse" data-target="#navbar-toggled" aria-label="Toggle navbar" aria-expanded="false" aria-controls="navbar-toggled">
+                    <i class="fas fa-bars hamburger-icon"></i>
+                </div>
+                <!-- /Navbar toggler icon -->
+                <!-- Contact modal trigger button -->
+                <div type="button" id="small-contact-modal-trigger" class="nav-link" data-dismiss="modal" data-toggle="modal" data-target="#contact-modal">
+                    Contact
+                </div>
+                <!-- /Contact modal trigger button -->
+            </nav>
+        </div>
+        <!-- /Collapsed navbar (CREDIT: Bootstrap docs)-->
+        <!-- Expanded navbar (CREDIT: Bootstrap docs) -->
+        <div class="col-6 d-none d-sm-block" id="expanded-navbar-col">
+            <nav class="navbar navbar-wrapper">
+                <div class="navbar-nav nav-links-wrapper">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="blog.html" class="nav-link">Blog</a>                       
+                        <a href="resume.html" class="nav-link">Resume</a>
+                        <!-- Contact modal trigger -->
+                        <div type="button" class="nav-link" data-toggle="modal" data-target="#contact-modal">
+                            Contact
+                        </div>
+                        <!-- /Contact modal trigger    -->
+                </div>
+            </nav>
+        </div>
+        <!-- /Expanded navbar -->
+    </div>
+    <!-- /Navbar -->
+    <!-- Toggled menu -->
+    <div class="row no-gutters toggled-menu-row">
+        <div class="collapse navbar-collapse fade" id="navbar-toggled">
+            <ul class="navbar-nav toggled-nav-links-wrapper">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>  
+                </li>
+                <li class="nav-item">                     
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /Toggled menu -->
+    <!-- Contact Modal (CREDIT: Bootstrap docs) -->
+    <div class="modal fade" id="contact-modal" data-backdrop="static" tabindex="-1" aria-labelledby="contact-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contact-modal-title">Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="modal-dismiss-button" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact form -->
+                    <form class="contact-form container-fluid" autocomplete="on">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <input class="contact-form-element" type="text" id="first_name" name="fname" placeholder="First Name" aria-labelled="First Name" required autofocus>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <input class="contact-form-element" type="text" id="last_name" name="lname" placeholder="Last Name" aria-labelled="Last Name" required>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <!-- Credit: https://www.regular-expressions.info/email.html for pattern attribute regex -->
+                                <input class="contact-form-element" type="email" id="email" name="email" placeholder="Email Address" aria-labelled="Email Address" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <input class="contact-form-element" type="tel" id="phone" name="phone" placeholder="Phone Number (optional)" aria-labelled="Phone Number">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="contact-form-element" name="message" id="message" cols="23" rows="8" placeholder="Type your message here"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <input class="contact-form-element btn" id="contact-form-submit" type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- /Contact form -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Contact Modal -->
+</header>
+<!-- /Header -->
+
+<!-- Main content section  -->
+<main class="container-fluid mt-4 p-0">
+    <!-- Blog page header -->
+    <div class="row mx-0">
+        <div class="col-12" id="blog-page-header">
+            <h4>My articles&nbsp;&nbsp;<span><i class="fas fa-pen-fancy"></i></span></h4>
+        </div>
+    </div>
+    <!-- /Blog page header -->
+    <!-- Articles main section -->
+    <div class="row mx-0">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 blog-item-wrapper">
+            <a href="" class="blog-item-link-wrapper">
+                <div class="blog-item-image"></div>
+            
+            </a>
+        </div>
+        
+    
+    </div>
+    <!-- /Articles main section -->
+
+</main>
+<!-- /Main content section -->
+
+<!-- Footer -->
+<footer class="container-fluid p-0 mt-2">
+    <div class="row no-gutters align-items-center footer-row p-2">
+        <div class="col">
+            <div id="footer-info-wrapper">
+                <p>Writing code from Bucharest, RO and Torquay, UK</p>
+                <small>&#169; 2020 Tom Haysom</small>
+            </div>
+        </div>
+        <div class="col">
+            <div class="footer-icons-wrapper">
+                <a href="https://github.com/thaysom22" class="footer-icon" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/thomas-haysom-a89b7b58/" class="footer-icon" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://medium.com/@thaysom22" class="footer-icon" target="_blank">
+                    <i class="fab fa-medium"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /Footer -->
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+</body>
+</html>
