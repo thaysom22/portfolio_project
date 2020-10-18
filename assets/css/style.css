@@ -27,6 +27,10 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Lato', sans-serif;
 }
 
+a,a:hover{
+    text-decoration: none;
+}
+
 /* --- Temp colors for layout editing --- */
 
 
@@ -504,22 +508,116 @@ header .hamburger-icon{
 
 }
 
-/* --- Blog --- */
+/* --- Blog and projects pages --- */
 
-#blog-page-header{
+#blog-page-header,#projects-page-header{
     margin-bottom: 1em;
     background-color: #0e1c36;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-#blog-page-header>h4{
+#blog-page-header>h4,#projects-page-header>h4{
     color:#f5f5f5;
     margin: 0;
 }
 
-#blog-page-header span{
+#blog-page-header span,#projects-page-header span{
     color:#9f7e69;
+}
+
+.blog-item-link-wrapper,.project-item-link-wrapper{
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.blog-item-caption,.project-item-caption{
+    color: #0e1c36;
+    min-height: 100px;
+}
+
+.blog-item-caption>h5,.project-item-caption>h5{
+    font-weight: 700;
+}
+
+
+.blog-item-image,.project-item-image{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+}
+
+/* CREDIT: Unsplash for all blog and project images */
+#blog-image-1{
+    background-image: url("../images/blog_post_1.jpg");
+}
+
+#blog-image-2{
+    background-image: url("../images/blog_post_2.jpg");
+}
+
+#blog-image-3{
+    background-image: url("../images/blog_post_3.jpg");
+}
+
+#blog-image-4{
+    background-image: url("../images/blog_post_4.jpg");
+}
+
+#blog-image-5{
+    background-image: url("../images/blog_post_5.jpg");
+}
+
+#blog-image-6{
+    background-image: url("../images/blog_post_6.jpg");
+}
+
+#blog-image-7{
+    background-image: url("../images/blog_post_7.jpg");
+}
+
+#blog-image-8{
+    background-image: url("../images/blog_post_8.jpg");
+}
+
+#project-image-1{
+    background-image: url("../images/project_1.jpg");
+}
+
+#project-image-2{
+    background-image: url("../images/project_2.jpg");
+}
+
+#project-image-3{
+    background-image: url("../images/project_3.jpg");
+}
+
+#project-image-4{
+    background-image: url("../images/project_4.jpg");
+}
+
+#project-image-5{
+    background-image: url("../images/project_5.jpg");
+}
+
+#project-image-6{
+    background-image: url("../images/project_6.jpg");
+}
+
+#project-image-7{
+    background-image: url("../images/project_7.jpg");
+}
+
+#project-image-8{
+    background-image: url("../images/project_8.jpg");
+}
+@media (min-width: 400px){
+    .blog-item-link-wrapper,.project-item-link-wrapper{
+        border: solid 2px #9f7e69;
+        border-radius: 5px;
+    }
 }
 
 /* --- Footer --- */
