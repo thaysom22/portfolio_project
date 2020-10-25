@@ -127,6 +127,13 @@ header .hamburger-icon{
     background-color: rgba(159,126,105,.5);
 }
 
+.nav-links-wrapper .nav-link:focus,
+.collapsed-navbar-wrapper .nav-link:focus,
+.toggled-nav-links-wrapper .nav-link:focus{
+    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.8);
+    outline: none;
+}
+
 .active{
     font-weight: 700;
 }
@@ -162,6 +169,7 @@ header .hamburger-icon{
     margin: auto 5px auto 1%;
     font-size: 1em;
 }
+
 
 @media (min-width: 576px) and (max-width: 850px){
     
@@ -204,6 +212,11 @@ header .hamburger-icon{
 
 .modal-header span{
     font-size: 3rem;
+}
+
+.modal-header button:focus,
+.modal-header span:focus{
+    outline: none;
 }
 
 .contact-form-element{
@@ -330,6 +343,11 @@ input.contact-form-element:not(#contact-form-submit){
 
 }
 
+#jumbotron-CTA-button:focus{
+    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.8);
+    outline: none;
+}
+
 /* CREDIT: Codepen: Chat Bubbles in CSS: https://codepen.io/Founts/pen/gmhcl */
 @media (min-width: 630px){
     #hero-jumbotron-wrapper{
@@ -437,6 +455,11 @@ input.contact-form-element:not(#contact-form-submit){
     border-radius: 6px;
     display: inline-block;
     margin: 10px 0;
+}
+
+.main-content-wrapper a:focus{
+    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.8);
+    outline: none;
 }
 
 .main-content-wrapper p{
