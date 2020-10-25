@@ -6,7 +6,7 @@ A professional and personalized, fully responsive mobile first website:
 * presenting and linking to my coding projects on github.com
 * presenting and linking to my blog posts on medium.com
 * providing links to my professional social media accounts
-* displaying a contact form with my contact details
+* displaying a simple contact form with my contact details
 
 ### Link to live site
 
@@ -16,9 +16,9 @@ A professional and personalized, fully responsive mobile first website:
 
 The owner's (my) goals for the site:
 
-* To present my skills, experience, qualifications and abilities in a clear, convenient format to potential
+* To present my skills, experience, qualifications and abilities in a clear, convenient, professional format to potential
 employers and clients. 
-* To provide a positive user experience to all users of the site and help establish a positive reputation for myself as
+* To provide a positive and satisfying experience to all users of the site and help establish a positive reputation for myself as
 a developer and web designer.
 * To provide a convenient way for potential employers/clients/collaborators/developers to contact me
 so that I increase job opportunities, expand my network and  industry connections.
@@ -31,9 +31,9 @@ so I am more likely to be hired or recommended for projects.
 
 This site facilitates the realisation of these owner's goals better than alternatives by:
 
+* Being fully personalised in content and presentation 
+* Displaying relevant information to users while simultaneously showcasing my design and front-end development skills
 * 
-*
-*
 
 ### User goals
 
@@ -172,7 +172,7 @@ Describe fully the process followed using GitHub pages
 Detail any differences between development version and deployed version (branch differences)
 Describe how to run code locally
 
-## Credits
+## Credits and acknowledgements
 
 ### Content
 
@@ -196,3 +196,12 @@ Code Institute template for README
 AnnaG README.md file from MS1 project example for README template guide
 [websitedimensions.com](https://www.websitedimensions.com/)
 [appledeveloper.com docs](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html)
+* Bootstrap - stackpath CDN
+* Bootstrap docs
+* Font awesome
+* w3schools.com
+* coolors.co - color palette picker
+* Unsplash - Cookie the Pom
+* pixlr.com image editing software
+* hover.css (hvr-grow animation - css class properties copied directly)
+* Google fonts
