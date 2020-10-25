@@ -424,6 +424,7 @@ input.contact-form-element:not(#contact-form-submit){
 
 .main-content-wrapper p{
     margin: 1em 0;
+    max-width: 400px;
 }
 
 .cta_image{
@@ -446,6 +447,12 @@ input.contact-form-element:not(#contact-form-submit){
 
 #resume_cta_image{
     background-image: url("../images/resume_cta.jpg");
+}
+
+.main-content-break{
+    width: 20%;
+    border-top: solid 5px #9f7e69;
+    opacity: 0.7;
 }
 
 @media (min-width: 700px) and (max-width: 991.99px){
@@ -472,6 +479,7 @@ input.contact-form-element:not(#contact-form-submit){
     .main-content-wrapper p{
         min-height: 6em;  
         margin-bottom: .5em;
+        max-width: 350px;
 
     }
 }
