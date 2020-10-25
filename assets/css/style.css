@@ -130,7 +130,7 @@ header .hamburger-icon{
 .nav-links-wrapper .nav-link:focus,
 .collapsed-navbar-wrapper .nav-link:focus,
 .toggled-nav-links-wrapper .nav-link:focus{
-    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.8);
+    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.4);
     outline: none;
 }
 
@@ -344,7 +344,7 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 #jumbotron-CTA-button:focus{
-    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.8);
+    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.4);
     outline: none;
 }
 
@@ -458,7 +458,7 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 .main-content-wrapper a:focus{
-    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.8);
+    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.4);
     outline: none;
 }
 
