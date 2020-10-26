@@ -190,6 +190,16 @@ header .hamburger-icon{
 
 /* --- Contact modal --- */
 
+/* Custom backdrop bluring when modal open*/
+/* CREDIT: https://stackoverflow.com/questions/19571955/how-to-make-modal-dialog-with-blur-background-using-twitter-bootstrap */
+body.modal-open #blur-modal-open-container{
+    -moz-filter: blur(1px) grayscale(90%);
+    -o-filter: blur(1px) grayscale(90%);
+    -ms-filter: blur(1px) grayscale(90%);
+    filter: blur(1px) grayscale(90%);
+}
+
+
 .modal-content{
     background-color: #0e1c36;
     border-radius: 1rem;
@@ -268,8 +278,8 @@ input.contact-form-element:not(#contact-form-submit){
         height: 43px;
         font-size: 1.25em;
     }
-
 }
+
 
 @media (min-width: 992px){
     
