@@ -200,6 +200,15 @@ header .hamburger-icon{
     margin-top: 90px;
 }
 
+/* Custom override of default BS modal entrance transition */
+.modal.fade .modal-dialog{
+    transform: scale(0.9);
+}
+
+.modal.show .modal-dialog{
+    transform: none;
+}
+
 .modal-header{
     align-items: center;
 }
@@ -240,6 +249,11 @@ input.contact-form-element:not(#contact-form-submit){
     border-radius: .5rem;
 }
 
+#contact-form-submit:focus{
+    box-shadow: 0 0 0 0.2rem rgba(159,126,105,.4);
+    outline: none;
+}
+
 @media (min-width: 576px){
     .modal-dialog {
         max-width: 600px;
@@ -251,7 +265,7 @@ input.contact-form-element:not(#contact-form-submit){
 
     #contact-form-submit{
         width: 80px;
-        height: 46.5px;
+        height: 43px;
         font-size: 1.25em;
     }
 
