@@ -54,8 +54,17 @@ a,a:hover{
 
 /* --- Header --- */
 
+header{
+    background-color: rgba(245,245,245,.8);
+}
+
 .header-row{
     height: 80px;   
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
 }
 
 header .collapsed-navbar-wrapper{
@@ -190,8 +199,6 @@ header .hamburger-icon{
     
 }
 
-
-
 /* --- Contact modal --- */
 
 /* Custom backdrop bluring when modal open*/
@@ -309,6 +316,7 @@ input.contact-form-element:not(#contact-form-submit){
 #hero-section-wrapper{
     position: relative;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 #hero-image{
@@ -560,6 +568,10 @@ input.contact-form-element:not(#contact-form-submit){
 
 /* Resume main sections */
 
+#resume-main{
+    margin-top: 5rem;
+}
+
 .resume-main-section{
     margin-bottom: 1.25em;
     color:#0e1c36;
@@ -699,9 +711,11 @@ input.contact-form-element:not(#contact-form-submit){
 
 #blog-page-header,#projects-page-header{
     margin-bottom: 1em;
+    margin-top: 5rem;
     background-color: #0e1c36;
     padding-top: 1em;
     padding-bottom: 1em;
+
 }
 
 #blog-page-header>h4,#projects-page-header>h4{

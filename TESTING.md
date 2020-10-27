@@ -31,3 +31,5 @@ Discuss bugs and issues encountered during testing (explain how or why not addre
 
 Details of any further tests performed
 
+Asked friends and family to use site on various devices and provide feedback. 
+
