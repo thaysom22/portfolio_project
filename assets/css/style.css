@@ -727,6 +727,11 @@ input.contact-form-element:not(#contact-form-submit){
     color:#9f7e69;
 }
 
+.project-item-wrapper hr,
+.blog-item-wrapper hr{
+    margin: 1rem auto;
+}
+
 .blog-item-link-wrapper,.project-item-link-wrapper{
     display: block;
     max-width: 400px;
@@ -814,7 +819,7 @@ input.contact-form-element:not(#contact-form-submit){
 #project-image-8{
     background-image: url("../images/project_8.jpg");
 }
-@media (min-width: 400px){
+@media (min-width: 576px){
     .blog-item-link-wrapper,.project-item-link-wrapper{
         border: solid 2px #9f7e69;
         border-radius: 5px;
