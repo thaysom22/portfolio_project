@@ -615,6 +615,19 @@ input.contact-form-element:not(#contact-form-submit){
 
 .employment,.qualification,.skill{
     margin: 1em 0;
+    position: relative;
+}
+
+/* Bullet points on employment and qualfication timelines */
+.employment::before{
+    content: '';
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #9f7e69;
+    border-radius: 50%;
+    left: -23.5px;
+    top: 6px;
 }
 
 .resume-item-description{
@@ -638,6 +651,13 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 @media (min-width: 768px){
+
+    /* Bullet points on employment and qualfication timelines */
+    .employment::before{
+        display: none;
+    }
+
+
     
     #work-history-wrapper,#education-wrapper{
         margin-bottom: 2em;
