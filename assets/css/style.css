@@ -755,6 +755,15 @@ input.contact-form-element:not(#contact-form-submit){
     min-height: 200px;
 }
 
+/* CREDIT: hover.css */
+/* adapted (subtle) grow hover effect */
+
+.hvr-grow-s:hover, .hvr-grow-s:focus, .hvr-grow-s:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
 /* CREDIT: Unsplash for all blog and project images */
 #blog-image-1{
     background-image: url("../images/blog_post_1.jpg");
@@ -819,6 +828,7 @@ input.contact-form-element:not(#contact-form-submit){
 #project-image-8{
     background-image: url("../images/project_8.jpg");
 }
+
 @media (min-width: 576px){
     .blog-item-link-wrapper,.project-item-link-wrapper{
         border: solid 2px #9f7e69;
