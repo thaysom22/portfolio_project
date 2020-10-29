@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
 a,a:hover{
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+    color: inherit;
 }
 
 /* Grow animation CREDIT: Hover.css (edited)*/
@@ -486,6 +487,10 @@ input.contact-form-element:not(#contact-form-submit){
     
 }
 
+.about-me-heading{
+    color:#0e1c36;
+}
+
 #main-content-row{
     margin: 30px 0;
 }
@@ -548,6 +553,21 @@ input.contact-form-element:not(#contact-form-submit){
     background-image: url("../images/resume_cta.jpg");
 }
 
+#resume-download-link{
+    font-weight: 700;
+    padding: .25rem;
+    display: inline-block;
+    color: #0e1c36;
+}
+
+#resume-download-link i{
+    color: #9f7e69;
+}
+
+#resume-main #resume-download-link{
+    margin-bottom: 1rem;
+}
+
 .main-content-break{
     width: 20%;
     border-top: solid 5px #9f7e69;
@@ -587,6 +607,10 @@ input.contact-form-element:not(#contact-form-submit){
 
 #resume-main{
     margin-top: 5rem;
+}
+
+#resume-main section{
+    flex-direction: column;
 }
 
 .resume-main-section{
