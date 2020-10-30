@@ -10,11 +10,11 @@ A professional and personalized, fully responsive mobile first website:
 * displaying a simple contact form with my contact details.
 * providing a link to download a pdf copy of my resume.
 
-### Link to live site
+## Link to live site
 
 [Link to live site](https://thaysom22.github.io/portfolio_project/) hosted by GitHub pages.
 
-### Owner's goals
+## Owner's goals
 
 The owner's (my) goals for the site:
 
@@ -36,81 +36,7 @@ This site facilitates the realisation of these owner's goals better than alterna
 * providing a richer, more engaging, more personalized exposition of my professional credentials, interests and personality than 
 a proforma resume hosting site or document.
 
-### User goals
-
-The goals of various site users are:
-
-* potential employer/client looking to hire a junior developer - wants to assess my skills and experience
-quickly, get an impression of my ability and areas of strength/weakness, find relevant information about 
-qualifications, view my projects and contact me easily.
-* potential collaborator looking to work with a junior developer with relevant skills and experience to their needs -
-wants to assess my skills and experience quickly, view my previous projects and contact me easily.
-* coding student/learner/enthusiast looking for blog posts relevant to their experience and knowledge levels - 
-wants to choose from and view my blog posts easily.
-* other developers who may want to follow me on GitHub or otherwise connect - want to view a summary of my projects
-and link to them easily on GitHub: may also want to contact me to connect. 
-
-This site facilitates the realisation of these various user's goals better than alternatives by:
-
-* providing a simple, intuitive user interface that facilatiates easy navigation to desired content.
-* separating resume, projects and blog features of site to avoid overloading users with information and 
-encapsulating what is relevant to them.
-* providing easy to find, clear and standardized contact information.
-
-## UX
-
-User stories:
-
-* A potential employer/client/collaborator: wants to find out about my qualifications, experience and 
-previous projects, and contact me if necessary, so they can conveniently evaluate my skill level and knowledge 
-relative to the needs of their organization/project. 
-* A potential client/collaborator: wishes to view the nature and quality of my projects, and contact me or to connect
-with me online so they can make an proposal/enquiry about a job/project.
-* A coding student/learner/enthusiast: wants to browse and read my blog posts and view my projects to potentially learn more 
-about a topic that interests them, or get ideas/reflections from someone in a similar situation, with similar career goals.  
-
-
-
-
-# Thomas Haysom - Porfolio and Blog Website
-
-A professional and personalized, fully responsive mobile first website:
-
-* including a landing page which displays overview of entire site and a prominent user call to action.
-* displaying the owner's (my) resume (work history, education, skills, qualifications).
-* presenting and linking to my coding projects on github.com.
-* presenting and linking to my blog posts on medium.com.
-* providing links to my professional social media accounts.
-* displaying a simple contact form with my contact details.
-* providing a link to download a pdf copy of my resume.
-
-### Link to live site
-
-[Link to live site](https://thaysom22.github.io/portfolio_project/) hosted by GitHub pages.
-
-### Owner's goals
-
-The owner's (my) goals for the site:
-
-* to present my skills, experience, qualifications and abilities in a clear, convenient, professional format to potential
-employers and clients. 
-* to provide a clear, positive and satisfying user interface and experience to all users of the site and help establish a positive reputation for myself as
-a developer and web designer with front end skills.
-* to provide a convenient way for potential employers/clients/collaborators/developers to contact me so that I increase job opportunities, expand my network and  industry connections.
-* to present my projects to potential colaborators and other developers so I increase my following and connections and receive more feedback and suggestions.
-* to present a selection of my blog posts primarily to other developers with a similar level of skills
-and experience to me so that I contribute in a small way to help others learn and grow and I benefit myself 
-through comments and interactions.
-* to evidence my accomplished communication and design skills so I am more likely to be hired or recommended for projects. 
-
-This site facilitates the realisation of these owner's goals better than alternatives by:
-
-* displaying relevant information to users while simultaneously showcasing my design and front-end development skills.
-* collating all aspects of my professional online presence and directing users on clear paths to relevant information through efficient navigation.
-* providing a richer, more engaging, more personalized exposition of my professional credentials, interests and personality than 
-a proforma resume hosting site or document.
-
-### User goals
+## User goals
 
 The goals of various site users are:
 
@@ -148,9 +74,39 @@ User stories ('As user_type I want to achieve X by doing Y'):
 * As a developer/other professional contact I want to easily find owner's contact details by navigating to contact area of site.
 * As any of the above user types I want to generally find out more about the owner as a developer by being directed to relevant and categorized information about him.
 
-### Links to wireframe mockups
+## Links to wireframe mockups
 
 [Wireframes for all pages](portfolio_project_wireframes.pdf) (pdf)
+
+### Changes to (or not noted in) wireframes during implementation
+
+* Added a home button in navbar. 
+* Hamburger icon used on small tablet sizes as well as mobile. 
+* Replaced menu modal with toggled menu below header
+* Retain contact modal trigger next to hamburger icon for better UX on mobile
+* Reduced header height to 80px on all device sizes
+* Made overlay on hero image to display as text at bottom of image on smaller screens and speech bubble in top left on larger
+screens
+* Added medium icon for blog to footer links
+* Project/blog/resume layout changes to 3 columns only on desktop screens, not tablet
+* Added borders around main sections on tablet sizes and above on resume page
+* Added image and border to blog post and project links on all display sizes, moved image to top of link with description below.
+* Added CTA button link to hero jumbotron (anchor to further down page)
+* Added zoom transition to hero image 
+* Removed 'top of page' link from footer.
+* Removed hero image sections from all pages but homepage
+* Added borders around main sections of homepage on larger display sizes
+* Added images in single column layout from each section to main sections on desktop view
+* Moved cta button in main sections to between title and image
+* Added styled hr elements between main sections on homepage
+* Blurred visible part of background page (except header) when modal is active
+* Added physical address info to bottom of contact form modal
+* Header position:fixed on all pages
+* Inserted hr divider between projects and blogposts on mobile view
+* Added subtle hover grow effect and box shadow focus effect over each blogpost/project link and form submit button
+* Provided user feedback for submission of contact form by browser alert 
+* Provided user feedback when pressing hamburger icon menu toggler
+* Added links for downloadable CV on home and resume pages
 
 ## Features
 
@@ -230,16 +186,29 @@ On desktop views the skills section becomes an extra column adjacent to the empl
 
 ### Features left to implement in future:
 
-* Internal blog post pages
-* Backend for form
+* Internal blog post pages - instead of linking to an external site which hosts blog posts, store each blog post as a .html file within the site directories. 
+Not worth doing yet as owner has not begun blogging! 
+* Implement backend script and database for storing form responses or add functionality to send an email to the owner via a form on the site. Beyond scope of course - requires greater knowledge of http requests and how to set up a database. 
+* Improve user feedback when using submit button on form to change color and content to processing then sent as form is submitted - requires Javascript. 
+* Add a icon to go to top of page which appears after scrolling down a certain distance from top - requires JavaScript.
 
 
 ## Technologies Used
 
-Languages used.
-Frameworks used. 
-Libraries used.
-Other tools (wireframing, images, fonts, colors, code validation, documentation) - provide link and how/why used.
+* HTML5 and CSS3 languages. JavaScript libraries used.
+* [Gitpod](https://www.gitpod.io/) cloud-based development environment to code website and organise directory structure of project. 
+* [Bootstrap](https://getbootstrap.com/) framework used to provide component and utility classes to help code certain features and style certain elements more efficiently.
+* [FontAwesome](https://fontawesome.com/) to provide font icons across site
+* [BootstapCDN by Stackpath](https://www.bootstrapcdn.com/) used to integrate Bootstrap and FontAwesome into project
+* [Google fonts](https://fonts.google.com/) to obtain webfonts used in project
+* [AutoPrefixer](https://autoprefixer.github.io/) used to add required prefixed to ensure css code is valid for previous 4 versions of browsers.
+* [Coolors - color picker](coolors.co) used to select combination of primary, secondary and tertiary color used across site ensuring good contrast and tasteful style.
+* [pixlr -image editing software](https://pixlr.com/) used to resize and crop images used in project
+* [W3 HTML validator](https://validator.w3.org/) used to ensure code in HTML files is valid
+* [W3 Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) used to ensure code in style.css file is valid
+* [jQuery](https://jquery.com/) JavaScript library used by Bootstrap for opening/closing modal contact form and toggling dropdown navigation menu from header
+* [popper.js](https://popper.js.org/) JavaScript library used by Bootstrap for toggling dropdown navigation menu from header.
+* [Balsamiq](https://balsamiq.com/) used to create wireframes.
 
 
 ## Testing
@@ -256,15 +225,21 @@ Describe how to run code locally
 
 ### Content
 
-Bootstrap templates used (and adapted)?
+* All text content was created by myself, the site owner. 
+* Font icons taken from [FontAwesome](https://fontawesome.com/).
 
 ### Media
 
-Images hosting sites (Unsplash)
+* 'TH DEV' logo in header was created by owner
+* All images used on site used were hosted on [unsplash.com](https://unsplash.com/)
 
 ### Code
 
-(Code also commented directly)
+(CREDITS given in code comments)
+
+* Responsive and collapsable navbar, toggled dropdown navigation menu, modal structure and functionality, responsive layout of sections - code adapted from templates provided in [Bootstrap documentation](https://getbootstrap.com/)
+* Regex used for validation in pattern attribute value of form copied and adapted from [regular-expressions.info](https://www.regular-expressions.info/email.html)
+* Custom Javascript function to excecute when modal form in submitted and trigger browser alert copied and adapted from [W3schools code snippet](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_onsubmit)
 
 ### Acknowledgements
 
@@ -276,132 +251,12 @@ Code Institute template for README
 AnnaG README.md file from MS1 project example for README template guide
 [websitedimensions.com](https://www.websitedimensions.com/)
 [appledeveloper.com docs](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html)
-* Bootstrap - stackpath CDN
-* Bootstrap docs
-* Font awesome
+
+
+
 * w3schools.com
-* coolors.co - color palette picker
+
 * Unsplash - Cookie the Pom
-* pixlr.com image editing software
+* 
 * hover.css (hvr-grow animation - css class properties copied directly)
-* Google fonts
-### Links to wireframe mockups
-
-[Wireframes for all pages](portfolio_project_wireframes.pdf) (pdf)
-
-## Features
-
-### Site map
-
-![Site map diagram image](sitemap.png)
-
-### Across site
-
-* Header - including responsive navigation menu and site logo. Allows all users to navigate easily, consistenly and quickly
-between different pages on the site by having clear, semantic menu options laid out in a standardized, predictable way. 
-Provides a nice way for user to easily return to home page if 'lost' by clicking the ubiquitous, persoanlized logo link.
-Responsive by collapsing into a menu button on smaller device sizes - so that content and functionality of navigation 
-menu is consistent across different viewport widths and all users have a similar experience. 
-* Footer - including repeated navigation menu links/site map links and social media links. Allows users to navigate once they have
-scrolled through the main page content without needing to scroll back up. Provides external links in an easy to find
-location: intuitively expected by users due to web conventions. 
-
-### Home (landing page) 
-
-* Hero image. Engaging and relevant large background image to encourage user to explore further by scrolling down and provide a
-pleasant first visual impression. 
-* About me section. Provides a succinct overview of my background, skills, experience and interests so users can quickly 
-gather bitesize summary of information on site. Includes 'Call to Action' (CTA) buttons linking to project, blog post and resume pages.
-
-### Blog
-
-* Short summary at top of page to summarise topics and style and guide users.
-* Title, image and brief description of each article for users to guage interest. Link to full post hosted internally/externally. 
-* Users can scroll down to view more articles. 
-* Responsive grid layout which can be further populated with future posts. 
-
-### Resume
-
-* Photo of me to familiarize users
-* Timeline of my work history for users to evaulate
-* Timeline of my educational history for users to evaluate
-* Summary of my relative skills in various languages and frameworks
-* CTA link to projects page
-* CTA link to contact me page
-
-### Projects
-
-* Short summary listing the types of projects I have worked on
-* CTA link to contact me page if users have questions, suggestions or wish to collaborate
-* Grid layout of project summaries with short description, relevant image and external link to repo and/or live project.
-* Responsive grid layout which can be further populated with future project summaries.
-
-### Contact me
-
-* Form for users to contact me easily.
-* Name, email, subject, text area elements. 
-* Alternative contact information
-
-
-
-Existing features - how do they help user's achieve their goals, what is their purpose.
-
-Explain scope/structure decisions made in choice and design of features. 
-
-
-Features left to implement in future:
-
-* Internal blog post pages
-* Backend for form
-
-## Technologies Used
-
-Languages used.
-Frameworks used. 
-Libraries used.
-Other tools (wireframing, images, fonts, colors, code validation, documentation) - provide link and how/why used.
-
-
-## Testing
-
-Link to separate TESTING.md file 
-
-## Deployment
-
-Describe fully the process followed using GitHub pages
-Detail any differences between development version and deployed version (branch differences)
-Describe how to run code locally
-
-## Credits and acknowledgements
-
-### Content
-
-Bootstrap templates used (and adapted)?
-
-### Media
-
-Images hosting sites (Unsplash)
-
-### Code
-
-(Code also commented directly)
-
-### Acknowledgements
-
-StackOverflow
-Slack community 
-Book?
-Mentor
-Code Institute template for README
-AnnaG README.md file from MS1 project example for README template guide
-[websitedimensions.com](https://www.websitedimensions.com/)
-[appledeveloper.com docs](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html)
-* Bootstrap - stackpath CDN
-* Bootstrap docs
-* Font awesome
-* w3schools.com
-* coolors.co - color palette picker
-* Unsplash - Cookie the Pom
-* pixlr.com image editing software
-* hover.css (hvr-grow animation - css class properties copied directly)
-* Google fonts
+*
