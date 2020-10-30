@@ -209,6 +209,7 @@ Not worth doing yet as owner has not begun blogging!
 * [jQuery](https://jquery.com/) JavaScript library used by Bootstrap for opening/closing modal contact form and toggling dropdown navigation menu from header
 * [popper.js](https://popper.js.org/) JavaScript library used by Bootstrap for toggling dropdown navigation menu from header.
 * [Balsamiq](https://balsamiq.com/) used to create wireframes.
+* [HEX/RGB converter tool](https://www.webfx.com/web-design/hex-to-rgb/) used to quickly convert between HEX and RGB color codes.
 
 
 ## Testing
@@ -231,7 +232,7 @@ Describe how to run code locally
 ### Media
 
 * 'TH DEV' logo in header was created by owner
-* All images used on site used were hosted on [unsplash.com](https://unsplash.com/)
+* All images used on site used were taken from [unsplash.com](https://unsplash.com/)
 
 ### Code
 
@@ -239,24 +240,16 @@ Describe how to run code locally
 
 * Responsive and collapsable navbar, toggled dropdown navigation menu, modal structure and functionality, responsive layout of sections - code adapted from templates provided in [Bootstrap documentation](https://getbootstrap.com/)
 * Regex used for validation in pattern attribute value of form copied and adapted from [regular-expressions.info](https://www.regular-expressions.info/email.html)
-* Custom Javascript function to excecute when modal form in submitted and trigger browser alert copied and adapted from [W3schools code snippet](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_onsubmit)
+* Custom Javascript function written into html to excecute when modal form in submitted and trigger browser alert copied and adapted from [W3schools code snippet](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_onsubmit)
+* CSS for hover and focus state transitions and transforms copied from [hover.css repository](https://github.com/IanLunn/Hover) and adapted. 
 
 ### Acknowledgements
 
-StackOverflow
-Slack community 
-Book?
-Mentor
-Code Institute template for README
-AnnaG README.md file from MS1 project example for README template guide
-[websitedimensions.com](https://www.websitedimensions.com/)
-[appledeveloper.com docs](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html)
-
-
-
-* w3schools.com
-
-* Unsplash - Cookie the Pom
-* 
-* hover.css (hvr-grow animation - css class properties copied directly)
-*
+* StackOverflow - invaluable source of support and ideas when searching for answers to specific implementation questions or problems.
+* Slack community - used to ask questions about project.
+* Mentor - Kyeza Arnold suggested and encouraged the idea of a personal portoflio website project. He also suggested changing the header positioning to fixed at the top of the viewport and adding an alert when contact form is submitted. 
+* Code Institute template for README used as guide to structure this README.
+* [appledeveloper.com docs](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html) used to find out display sizes and pixel ratios of common iOS devices.
+* [W3schools](https://w3schools.com) used as reference for HTML elements and attributes
+* [Bootstrap documentation](https://getbootstrap.com/) used as reference when adding classes defined in bootstrap .css files.
+* [CSS Visual reference](https://cssreference.io/) used as reference for css properties and values.
