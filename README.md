@@ -140,12 +140,13 @@ User stories ('As user_type I want to achieve X by doing Y'):
 * As a potential employer/client/collaborator I want to view site owner's previous projects and evaluate his skill and experience by linking to relevant GitHub repositories.
 * As a potential employer/client/collaborator I want to contact the site owner, to make a proposal/enquiry about a job/project or ask a general question, by completing a simple online form.
 * As a potential employer/client/collaborator I want to read the site owner's blog, to assess his interets and communciation skills, by selecting from a display of links to posts.
+* As a potential employer/client/collaborator I want to view a specific proffesional profile of the owner by selecting from links to popular recruitment/bloging/code hosting sites.
 * As a coding student/learner/enthusiast I want to read owner's blog posts, to learn more about topics that interest me and get ideas and inspiration, by browsing a selection of sample links to full posts.
 * As a coding student/learner/enthusiast I want to view owner's projects, to learn and get ideas, by browsing a selection of sample links to GitHub repositories.
 * As a coding student/learner/enthusiast I want to make contact with the owner to discuss ideas, resources or make connections; by completing a simple online form.
-* As a developer/other professional/contact I want to quickly find owner's work history and education by navigating to a clear online summary.
-* As a developer/other professional/contact I want to easily find owner's contact details by navigating to contact area of site.
- 
+* As a developer/other professional contact I want to quickly find owner's work history and education by navigating to a clear online summary.
+* As a developer/other professional contact I want to easily find owner's contact details by navigating to contact area of site.
+* As any of the above user types I want to generally find out more about the owner as a developer by being directed to relevant and categorized information about him.
 
 ### Links to wireframe mockups
 
@@ -162,64 +163,76 @@ User stories ('As user_type I want to achieve X by doing Y'):
 
 ### Features across whole site
 
-* Header - including top left site logo which links back to index.html and top right responsive navigation menu. 
+* [Header](index.html) - fixed height and fixed to top of viewport over other content on all pages and view sizes. Includes familiar top left site logo which links back to index.html and top right responsive navigation menu. 
 Navigation menu includes links to Home, Projects, Blog and Resume pages; and a Contact button that opens a modal containing a contact form (described below).
 All navigation links (except logo icon) provide user feedback: a background-color transition hover effect and a boxshadow active effect when pressed/clicked.
-Navigation links in responsive navbar occupy right half of header area on desktop views, 66% on tablet views and collapse into a top right 'hamburger' menu button with remaining adjacent contact link on mobile device sizes. 
+Current page (active link) has a bold font to remind the user of their current location on the site.
+Navigation links in responsive navbar occupy right half of header area on desktop views, 66% on tablet views and collapse into a familiar top right 'hamburger' menu button with remaining adjacent contact link on mobile device sizes. Link heights scales subtly with viewport width on desktop views.
 Hamburger menu drops down at top right of area below header when icon is pressed - dropdown menu contains links to Home, Projects, Blog and Resume pages which are styled consistently and provide consistent user feedback. 
+Header provides a familiar and comfortable navigation experience to users and reassuring feedback when using navigation. Header allows user to reach all areas of site very easily for anywhere on the site.
 
-* Contact modal - triggered by Contact button that is present at top right of header on all view sizes. 
+* [Contact modal](index.html) - triggered by clicking/pressing Contact button that is present at top right of header on all view sizes. 
 Modal content starts beneath header and all of page content is covered by grayscale overlay, all page content (except header) is blurred.
 Modal is scrollable and cannot be closed by clicking outside modal. 
-Modal contains a header: with a 'contact me' title and a button to dismiss and close the modal which returns user to the page from which the modal was opened. 
+Modal contains a header: with a 'contact me' title and a 'x' icon button (with scale up hover effect) to dismiss and close the modal which returns user to the page from which the modal was opened. 
 Modal contains a body: with a form containing 5 input fields (first name, last name, email, phonenumber and message) which are labelled by placeholder text. First name, last name and email are required fields. There is client-side verification of phone number and email format using regex. 
-Form has a submit button which triggers pop-ups next to input fields if requirements of form are not met, or if form meets requirements it triggers a browser alert to confirm form was usbmitted successfully and reloads page that modal was opened from. 
+Form has a submit button which triggers pop-ups next to input fields if requirements of form are not met, or if form meets requirements it triggers a browser alert to confirm form was usbmitted successfully and reloads page that modal was opened from. Sumbit button has a scale up hover effect and a box shadow active effect.
 Modal has a footer containing location and email contact information for site owner.
+Modal has a responsive layout - positioning of short input fields adjusts from single column on mobile to two column on desktop. Width of message input field increases with viewport width. 
 
-* Footer - 
+* [Footer](index.html) - fixed height on all pages and view sizes. Dark background and smaller white font used to provide contrast and to visually identify 'aside' information.
+Footer contains brief summary of location and copyright information at bottom left (serves as an 'about me'). 
+Footer contains recognizable icon links to owner's Medium, GitHub and LinkedIn profiles so user can easily view specific parts of owner's online presence. These links have a background-color transition hover effect.
 
 ### Home (landing page) 
 
-* Hero image. Engaging and relevant large background image to encourage user to explore further by scrolling down and provide a
-pleasant first visual impression. 
-* About me section. Provides a succinct overview of my background, skills, experience and interests so users can quickly 
-gather bitesize summary of information on site. Includes 'Call to Action' (CTA) buttons linking to project, blog post and resume pages.
+* [Hero image section](index.html) - engaging large background image with subtle zoom in transition to encourage a positive first visual impression and emotional response.
+Image is styled responsively so that the most important central part of the image is always visible and centered, without stretching or loss of quality on all device sizes. 
+Hero image has a responsive jumbotron overlay with a brief headline and large call to action link 'Get to know me' which is anchored to main section of the homepage below.
+Call to action provides direction for users who are more generally interested in finding out more about the owner, ratehr than looking for a specific thing. 
+Call to action button is bold, has high contrast and scales up noticeably on hover to encourage user action. 
+Jumbotron box size and font sizes scale change at specific view port width so that content remains prominent on all device sizes. 
+Position, background and color of jumbrotron changes when viewport width reaches orginal width of hero image and starts to zoom. 
+Jumbotron is positioned at bottom of hero image on smaller below this point (against darker part of image for contrast) and changes to a speech bubble design at top left of image (with dark text and white background) after this point.
+User is drawn intially to jumbotron on all display sizes as a result. 
+
+* [About me heading](index.html) - three bold headlines to provide user with high level, easy to digest information about me. Consistent high contrast colors, styling and layout on all device sizes. 
+
+* [Main sections of homepage](index.html) - this section is anchored from the call to action button in jumbotron above. Provides a brief summary of each of the main areas of the site (projects, blog, resume) and a link to each as a button styled with bold effects similar to the jumbotron CTA button.
+Resume subsection also includes a [link to download a pdf](index.html) of my resume so this option is easily accessible on the homepage for any users who have this specific goal. 
+Layout of this section changes from three full-width subsections in one column on mobile view, to one fixed-width column with a surrounding border on tablet, to a one row layout with relevant images added and a border around each subsection on larger displays. 
+This responsive layout design makes good use of available space and ensures each section in always clearly delineated and easy to find.
 
 ### Blog
 
-* Short summary at top of page to summarise topics and style and guide users.
-* Title, image and brief description of each article for users to guage interest. Link to full post hosted internally/externally. 
-* Users can scroll down to view more articles. 
-* Responsive grid layout which can be further populated with future posts. 
-
-### Resume
-
-* Photo of me to familiarize users
-* Timeline of my work history for users to evaulate
-* Timeline of my educational history for users to evaluate
-* Summary of my relative skills in various languages and frameworks
-* CTA link to projects page
-* CTA link to contact me page
+* [Heading](blog.html) - a full width heading box at the top of page with a title containing relevant icon and contrasting colors. Gives clear feedback to user where they are on the site and what the contents of the page will be. 
+* [Main section](blog.html) - contains external links to individual blog posts (open in new tab). Each link is a relevant background image, short summary and title. Each link has a scale up hover effect to provide user with a focus on the post they are considering. 
+Layout of links to blog posts is responsive: one column full width with spacing horizonal dividers on mobile view; 2 column with a border around each link and space around each link on small tablets, 3 column on large tablets and 4 column on desktop. 
+User is able to comfortably browse all blog post topics and select to open those in which thet are interested. 
 
 ### Projects
 
-* Short summary listing the types of projects I have worked on
-* CTA link to contact me page if users have questions, suggestions or wish to collaborate
-* Grid layout of project summaries with short description, relevant image and external link to repo and/or live project.
-* Responsive grid layout which can be further populated with future project summaries.
+* [Heading](projects.html) - a full width heading box at the top of page with a title containing relevant icon and contrasting colors. Gives clear feedback to user where they are on the site and what the contents of the page will be. 
+* [Main section](projects.html) - contains external links to individual project repositories (open in new tab). Each link is a relevant background image, short summary and title. Each link has a scale up hover effect to provide user with a focus on the project they are considering. 
+Layout of links to projects is responsive: one column full width with spacing horizonal dividers on mobile view; 2 column with a border around each link and space around each link on small tablets, 3 column on large tablets and 4 column on desktop. 
+User is able to comfortably browse all of owner's projects and select to open those in which thet are interested. 
+
+### Resume
+
+* ['Executive summary' heading](resume.html) - three bold headlines to provide user with further high level, easy to digest information about me; since if they have navigated to this page they are interested in my credentials.Consistent high contrast colors, styling and layout on all device sizes. 
+* ['Download my resume' link](resume.html) (as on homepage) clearly positioned near top of page and easily accessible for any users who require my resume in this format. 
+* [Work history section and qualification sections](resume.html) provide clear and concise dates, employer information and descriptions of roles in a reverse-chronological timeline format so users can easily digest information. 
+Each section of page (work history, qualifications, skills, about me) has a full width heading box at the top of page with a title containing relevant icon and consistent, contrasting colors. Gives clear feedback to user to find information on the page.
+Information is prioritzed and easy for user to find: educational qualifications are displayed first followed by a summary of owner's skills and knowledge of specific technologies as a software developer and a more casual 'about me' section conatining owner's interests, hobbies and achievements and a consistent avatar image displayed.
+Sections have a responsive layout to maximize use of available horizontal space and provide more information on viewport where possible. All sections are full width, single column and stacked vertically on mobile views. The employment and qualification sections change to a two column layout on tablet views (each with a border) while skills and about me sections remain full width (but the arrangment of elements within these sections changes to accommodate extra space).
+On desktop views the skills section becomes an extra column adjacent to the employments and qualifications section while the about me section remains full width at the bottom of the page (since it has lowest priority).   
 
 
-
-
-Existing features - how do they help user's achieve their goals, what is their purpose.
-
-Explain scope/structure decisions made in choice and design of features. 
-
-
-Features left to implement in future:
+### Features left to implement in future:
 
 * Internal blog post pages
 * Backend for form
+
 
 ## Technologies Used
 
@@ -231,7 +244,7 @@ Other tools (wireframing, images, fonts, colors, code validation, documentation)
 
 ## Testing
 
-Link to separate TESTING.md file 
+[Link to TESTING.md file]("TESTING.md")
 
 ## Deployment
 
