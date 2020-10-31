@@ -218,9 +218,26 @@ Not worth doing yet as owner has not begun blogging!
 
 ## Deployment
 
-Describe fully the process followed using GitHub pages
-Detail any differences between development version and deployed version (branch differences)
-Describe how to run code locally
+### Deployment to GitHub pages
+
+1. Go to the [GitHub repo](https://github.com/thaysom22/portfolio_project) for this project.
+2. Under **Settings** tab, scroll to **GitHub Pages** section.
+3. Under **Source** select **master** branch and **/ (root)** from dropdown menus. 
+4. Click **Save** - the site will be built and the page will be refreshed.
+5. Scroll down to find the [url for live site](https://thaysom22.github.io/portfolio_project/). 
+
+### Local Deployment by cloning from GitHub
+
+1. Go to the [GitHub repo](https://github.com/thaysom22/portfolio_project) for this project.
+2. Ensure **master** branch is displayed in top left dropdown menu.
+3. Under **Code** dropdown menu, select **HTTPS** and copy the **web URL**. 
+4. Open Terminal
+5. Change current working directory to the location where location of cloned directory is required.
+6. Enter `git clone` followed by pasted **web URL**:
+
+`git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+
+7. Local clone of repository is created.
 
 ## Credits and acknowledgements
 
@@ -236,7 +253,7 @@ Describe how to run code locally
 
 ### Code
 
-(CREDITS given in code comments)
+**CREDITS also provided in code comments**
 
 * Responsive and collapsable navbar, toggled dropdown navigation menu, modal structure and functionality, responsive layout of sections - code adapted from templates provided in [Bootstrap documentation](https://getbootstrap.com/)
 * Regex used for validation in pattern attribute value of form copied and adapted from [regular-expressions.info](https://www.regular-expressions.info/email.html)
@@ -247,9 +264,10 @@ Describe how to run code locally
 
 * StackOverflow - invaluable source of support and ideas when searching for answers to specific implementation questions or problems.
 * Slack community - used to ask questions about project.
-* Mentor - Kyeza Arnold suggested and encouraged the idea of a personal portoflio website project. He also suggested changing the header positioning to fixed at the top of the viewport and adding an alert when contact form is submitted. 
+* Mentor - Kyeza Arnold: suggested and encouraged the initial idea of a personal portoflio website project. He also suggested changing the header positioning to fixed at the top of the viewport and adding an alert when contact form is submitted. 
 * Code Institute template for README used as guide to structure this README.
 * [appledeveloper.com docs](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html) used to find out display sizes and pixel ratios of common iOS devices.
 * [W3schools](https://w3schools.com) used as reference for HTML elements and attributes
 * [Bootstrap documentation](https://getbootstrap.com/) used as reference when adding classes defined in bootstrap .css files.
 * [CSS Visual reference](https://cssreference.io/) used as reference for css properties and values.
+* [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for guidance on how to clone a repository locally using CLI.
