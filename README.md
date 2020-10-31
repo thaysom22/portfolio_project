@@ -287,3 +287,4 @@ Not worth doing yet as owner has not begun blogging!
 * [Bootstrap documentation](https://getbootstrap.com/) used as reference when adding classes defined in bootstrap .css files.
 * [CSS Visual reference](https://cssreference.io/) used as reference for css properties and values.
 * [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for guidance on how to clone a repository locally using CLI.
+* [AJGreaves README](https://github.com/AJGreaves/portrait-artist) used to help structure and guide README.md and TESTING.md contents.

@@ -59,8 +59,13 @@
     a. From any page on the site I can easily locate and use the navigation bar to access information about the site owner I am interested in. Site, pages and individual sections are clearly organized and prioirtized so information is easy to find and digest. 
     b. From the **Homepage** I can use the **Get to know me** call to action button in jumbotron to jump to main section of the homepage which provides brief descriptions and call to action buttons to select from navigate to each of the main pages of the site. 
 
-### Non-automated tests
+### Testing of all features on site
 
+* Whole site features
+
+1. Header
+    a. Go to **Homepage** of site on mobile device and navigate to Projects, Resume and Blog pages by pressing the hamburger icon and using the links in the top right dropdown menu. 
+    *A bug was found here on mobile Chrome browser using iPhone SE: the contact button and hamburger icon are elongated and the text in the content button is not centered.  
 Provide details via scenarios of the process of testing all elements and functionality of the site
 Test how site looks and functions on different viewport sizes
 Test how site looks and functions on different browsers
