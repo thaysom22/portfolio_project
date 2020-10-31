@@ -59,20 +59,22 @@ encapsulating what is relevant to them.
 
 ## UX
 
-User stories ('As user_type I want to achieve X by doing Y'):
+### User stories 
 
-* As a potential employer/client/collaborator I want to find out about site owner's qualifications, experience and interests by viewing an online resume.
-* As a potential employer/client/collaborator I want to obtain a copy of site owner's resume by clicking a download link.
-* As a potential employer/client/collaborator I want to view site owner's previous projects and evaluate his skill and experience by linking to relevant GitHub repositories.
-* As a potential employer/client/collaborator I want to contact the site owner, to make a proposal/enquiry about a job/project or ask a general question, by completing a simple online form.
-* As a potential employer/client/collaborator I want to read the site owner's blog, to assess his interets and communciation skills, by selecting from a display of links to posts.
-* As a potential employer/client/collaborator I want to view a specific proffesional profile of the owner by selecting from links to popular recruitment/bloging/code hosting sites.
-* As a coding student/learner/enthusiast I want to read owner's blog posts, to learn more about topics that interest me and get ideas and inspiration, by browsing a selection of sample links to full posts.
-* As a coding student/learner/enthusiast I want to view owner's projects, to learn and get ideas, by browsing a selection of sample links to GitHub repositories.
-* As a coding student/learner/enthusiast I want to make contact with the owner to discuss ideas, resources or make connections; by completing a simple online form.
-* As a developer/other professional contact I want to quickly find owner's work history and education by navigating to a clear online summary.
-* As a developer/other professional contact I want to easily find owner's contact details by navigating to contact area of site.
-* As any of the above user types I want to generally find out more about the owner as a developer by being directed to relevant and categorized information about him.
+* *('As user_type I want to achieve X by doing Y'):*
+
+1. As a potential employer/client/collaborator I want to find out about site owner's qualifications, experience and interests by viewing an online resume.
+2. As a potential employer/client/collaborator I want to obtain a copy of site owner's resume by clicking a download link.
+3. As a potential employer/client/collaborator I want to view site owner's previous projects and evaluate his skill and experience by linking to relevant GitHub repositories.
+4. As a potential employer/client/collaborator I want to contact the site owner, to make a proposal/enquiry about a job/project or ask a general question, by completing a simple online form or finding contact information.
+5. As a potential employer/client/collaborator I want to read the site owner's blog, to assess his interets and communciation skills, by selecting from a display of links to posts.
+6. As a potential employer/client/collaborator I want to view a specific professional profile of the owner by selecting from links to popular recruitment/bloging/code hosting sites.
+7. As a coding student/learner/enthusiast I want to read owner's blog posts, to learn more about topics that interest me and get ideas and inspiration, by browsing a selection of sample links to full posts.
+8. As a coding student/learner/enthusiast I want to view owner's projects, to learn and get ideas, by browsing a selection of sample links to GitHub repositories.
+9. As a coding student/learner/enthusiast I want to make contact with the owner to discuss ideas, resources or make connections; by completing a simple online form or finding contact information.
+10. As a developer/other professional contact I want to quickly find owner's work history and education by navigating to a clear online summary.
+11. As a developer/other professional contact I want to easily contact the owner via a simple form or find the owner's contact details by navigating to a contact area of site.
+12. As any of the above user types I want to generally find out more about the owner as a developer by being directed to relevant and categorized information about him.
 
 ## Links to wireframe mockups
 
@@ -183,6 +185,20 @@ Information is prioritzed and easy for user to find: educational qualifications 
 Sections have a responsive layout to maximize use of available horizontal space and provide more information on viewport where possible. All sections are full width, single column and stacked vertically on mobile views. The employment and qualification sections change to a two column layout on tablet views (each with a border) while skills and about me sections remain full width (but the arrangment of elements within these sections changes to accommodate extra space).
 On desktop views the skills section becomes an extra column adjacent to the employments and qualifications section while the about me section remains full width at the bottom of the page (since it has lowest priority).   
 
+### Styling
+
+All pages
+
+* Color codes
+
+    * F5F5F5 cultured
+    * 0e1c36 oxford blue
+    * 9f7e69 beaver
+
+* Font pairing
+
+    * Headings: Lato (400,700)
+    * Body: Roberto (400, 300)
 
 ### Features left to implement in future:
 
@@ -196,6 +212,7 @@ Not worth doing yet as owner has not begun blogging!
 ## Technologies Used
 
 * HTML5 and CSS3 languages. JavaScript libraries used.
+* [Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools) to manipulate DOM, test code changes and responsivity of site.
 * [Gitpod](https://www.gitpod.io/) cloud-based development environment to code website and organise directory structure of project. 
 * [Bootstrap](https://getbootstrap.com/) framework used to provide component and utility classes to help code certain features and style certain elements more efficiently.
 * [FontAwesome](https://fontawesome.com/) to provide font icons across site
@@ -210,7 +227,6 @@ Not worth doing yet as owner has not begun blogging!
 * [popper.js](https://popper.js.org/) JavaScript library used by Bootstrap for toggling dropdown navigation menu from header.
 * [Balsamiq](https://balsamiq.com/) used to create wireframes.
 * [HEX/RGB converter tool](https://www.webfx.com/web-design/hex-to-rgb/) used to quickly convert between HEX and RGB color codes.
-
 
 ## Testing
 
