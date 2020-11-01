@@ -64,17 +64,62 @@
 * Whole site features
 
 1. Header
-    a. Go to **Homepage** of site on mobile device and navigate to Projects, Resume and Blog pages by pressing the hamburger icon and using the links in the top right dropdown menu. 
-    *A bug was found here on mobile Chrome browser using iPhone SE: the contact button and hamburger icon are elongated and the text in the content button is not centered.  
-Provide details via scenarios of the process of testing all elements and functionality of the site
-Test how site looks and functions on different viewport sizes
-Test how site looks and functions on different browsers
-Discuss bugs and issues encountered during testing (explain how or why not addressed)
+    a. Go to **Homepage** of site on mobile device and navigate to and between **Projects**, **Resume** and **Blog** pages by pressing the hamburger icon and using the links in the top right dropdown menu. 
+    *A bug was found here on mobile Chrome and Safari browsers using iPhone SE: the contact button and hamburger icon are elongated and the text in the content button is not centered. Tried to fix, but requires connecting iphone to mac and using web inspector tool to identify cause. I do not have a mac easily available so this fix was left for later as it does not affect function of header*  
+    b. Confirm that the hamburger icon opens and collapses the dropdown menu and all the links in the dropdown menu direct to correct pages and display box shadow transition when pressed.
+    *The buttons all work correctly but the effects when links are pressed are not as intended and as shown in chrome dev tools. As above, this bug does not affect function and user feedback is still provided so fix left for later when required tools are available.*
+    c. Confirm that the text of the current page link in the drop down menu is bold. 
+    d. Confirm that the contact button triggers full page contact form modal to appear and the background to the modal is dimmed.
+    e. Confirm that the header remains full width on all pages and as page is scrolled down.
+    f. Confirm that the header remains fixed to the top of the viewport at all times and is slightly translucent as page is scrolled down. 
+    g. On a tablet device, go to **Homepage** of site and navigate to and between **Projects**, **Resume** and **Blog** pages using the row of links.
+    *Same bug as above with styling of links in header - fix left to later*
+    h. Confirm that row of links occupies over half of horizontal space in header and that links are equally sized and do not overlap each other or outside the header.
+    i. Confirm that all the links in the navbar direct to correct pages and display box shadow transition when pressed.
+    *Same bug as above with styling of links in header - fix left to later*
+    j. Repeat steps c to f above on tablet.
+    k. On a desktop device, go to **Homepage** of site and navigate to and between **Projects**, **Resume** and **Blog** pages. 
+    l. Confirm that row of links occupies half of horizontal space in header and that links are equally sized and do not overlap each other or outside the header.
+    m. Repeat steps i and j above on desktop. 
+    n. Confirm that all links in header display background color transition when hovered over.
+    o. Open developer tools in the browser and adjust the viewport size from desktop, to tablet, to mobile. Confirm that the text and size of links scale with viewport width and remain usable and equal to each other. Confirm that links section of header expands to occupy over half of the width of the header at the appropriate breakpoint. Confirm that the navlinks collapse to a **hamburger icon** and **Contact** link at the appropriate breakpoint.
+    p. Use the *device toolbar* function of developer tools to repeat steps above for various mobile/tablet devices using built in emulators. 
+    q. On all devices, press/click the logo in the left of header and confirm naviagtion to **Homepage**. 
+
+2. Contact modal
+    a. On a mobile device, from **Homepage** press **Contact** button and confirm modal opens and scroll down and up to confirm header, form content and footer are displayed and scrolling only occurs on modal. Confirm that the form contains input areas for **First name**, **Last name**, **Email**, **Telephone** and **Message**. Confirm that all are centered, of equal width in a single column on the mobile view. Confirm all background is dimmed by a translucent overlay and all background except header is blurred. Confirm that the modal does not close when anywhere outside it is pressed.
+    b. Press 'x' modal dismiss button at top right of modal and confirm scale up transition effect user feedback.
+    *The expected scaling up effect was not seen on mobile Chrome and Safari browsers using iPhone SE but the background of the dismiss button does change color-this is cosmetic and fix can be left to later for reasons described in header testing above.*
+    c. Reopen modal, scroll down and press submit to try to submit empty form. Confirm that 'fill out this field' error message is displayed and contact modal remains open.
+    d. Try to submit a form with a first name, last name and an invalid email address. Confirm that an 'enter an email' error message is displayed and the contact modal remains open.
+    e. Fill out at least the required fields (first name, last name and a valid email) and press the submit button. Confirm that the submit button shows a scale up transition feedback effect and a browser alert success message is displayed. Confirm that when this alert is acknowledge, the page from whcih the modal was last opened is reloaded.
+    f. Use links in dropdown navigation menu to navigate to **Projects**, **Resume** and **Blog** pages and repeat steps a to e above.
+    g. Repeat steps a to f above on a tablet device. Confirm that width of **message** input area is wider on a tablet view. 
+    h. Repeat steps a to f above on a desktop device. Confirm that the input areas of the form display as two columns with the message area below. Confirm that the submit button displays a scale up hover transition effect and a box shadow effect with clicked. 
+    i. Open developer tools in the browser and adjust the viewport size from desktop, to tablet, to mobile. Confirm that the layout of the form input areas changes at appropriate breakpoints.
+    j. Use the *device toolbar* function of developer tools to repeat steps a to h above for various mobile/tablet devices using built in emulators. 
+
+3. Footer
+    a. On a mobile device, from **Homepage** scroll to bottom of page and test that each professional social media link opens the appropriate external url in a new browser window. Confirm that background color transition effect is displayed when each link is pressed.
+    *When testing using the social media links on a iPhone SE mobile device, it was observed that the right most link was very close to the scroll bar of the mobile browser. Fix: horizontal padding of footer container row increased.*
+    b. Confirm that the footer remains full width at all times, content is centered vertically and aligned horizontally to the left and right.
+    *It was noticed that the text content of the footer was a little large and overlapping onto four lines on an iPhone SE mobile device. Fix: fontsize reduced*   
+    c. Use links in navigation menu to navigate to **Projects**, **Resume** and **Blog** pages and repeat steps a to e above.
+    d. Repeat steps a, b and c on a tablet device. 
+    e. Repeat steps a, b and c on a desktop device. Confirm that background color transition effect is displayed when each link is hovered over. Confirm that bottom left text content and bottom right link icons are not too small on larger screen. 
+    f. Open developer tools in the browser and adjust the viewport size from desktop, to tablet, to mobile. Confirm that the content of the footer remains appropriately sized and clearly readable. Check that the footer remains constant height and there is no overlap of content outside footer area as viewport size is adjusted. Confirm that social media links remain in a single row of three and do not wrap.
+    g. Use the *device toolbar* function of developer tools to repeat steps a to e above for various mobile/tablet devices using built in emulators. 
+
+* Homepage features
+
+
+
+
 
 ## 'Automated' testing 
 
 code validators
-contrast/typography checking tools
+
 accessibility test?
 test without css stylesheet loading?
 
@@ -82,6 +127,8 @@ test without css stylesheet loading?
 
 ### Further testing
 
+On each page: color contrast
+html and css files manuallaly checked for comments, readability and errors
 
 Asked friends and family to use site on various devices and provide feedback. 
 
