@@ -29,12 +29,12 @@
         <div class="col-6 p-0 d-sm-none">
             <nav class="collapsed-navbar-wrapper navbar">
                 <!-- Contact modal trigger button -->
-                <div type="button" id="small-contact-modal-trigger" class="nav-link" data-dismiss="modal" data-toggle="modal" data-target="#contact-modal" tabindex="0">
+                <div id="small-contact-modal-trigger" class="nav-link" data-dismiss="modal" data-toggle="modal" data-target="#contact-modal" tabindex="0">
                     Contact
                 </div>
                 <!-- /Contact modal trigger button -->
                 <!-- Navbar toggler icon -->
-                <div type="button" class="hamburger-icon-wrapper navbar-toggler hvr-glow collapsed" data-toggle="collapse" data-target="#navbar-toggled" aria-label="Toggle navbar" aria-expanded="false" aria-controls="navbar-toggled">
+                <div role="button" class="hamburger-icon-wrapper navbar-toggler hvr-glow collapsed" data-toggle="collapse" data-target="#navbar-toggled" aria-label="Toggle navbar" aria-expanded="false" aria-controls="navbar-toggled">
                     <i class="fas fa-bars hamburger-icon"></i>
                 </div>
                 <!-- /Navbar toggler icon -->
@@ -50,7 +50,7 @@
                         <a href="blog.html" class="nav-link">Blog</a>                       
                         <a href="resume.html" class="nav-link active">Resume</a>
                         <!-- Contact modal trigger -->
-                        <div type="button" class="nav-link" data-toggle="modal" data-target="#contact-modal" tabindex="0">
+                        <div class="nav-link" data-toggle="modal" data-target="#contact-modal" tabindex="0">
                             Contact
                         </div>
                         <!-- /Contact modal trigger -->
@@ -111,7 +111,7 @@
                             <h6 class="resume-item-title">Mathematics Teacher</h6>
                             <span class="resume-item-location">British School of Bucharest, RO</span>
                             <span><strong>From:&nbsp;</strong><time datetime="2020-08">August 2020</time></span>
-                            <span><strong>&nbsp;To:&nbsp;</strong><time>Present</time></span>
+                            <span><strong>&nbsp;To:&nbsp;</strong>Present</span>
                             <p class="resume-item-description">
                                 International Secondary and Advanced-Level Teacher. Head of House leadership role. Charity events organizer. 
                             </p>
@@ -161,7 +161,7 @@
                             <h6 class="resume-item-title">Full Stack Development Diploma</h6>
                             <span class="resume-item-location">Code Institute. Remote</span>
                             <span><strong>From:&nbsp;</strong><time datetime="2020-07">July 2020</time></span>
-                            <span><strong>&nbsp;To:&nbsp;</strong><time>Present</time></span>
+                            <span><strong>&nbsp;To:&nbsp;</strong>Present</span>
                             <p class="resume-item-description">
                                 University accredited diploma. HTML5, CSS3, JavaScript, Python3 and SQL curriculum based around implementing four portfolio projects.
                             </p>
@@ -298,7 +298,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="contact-modal-title">Contact me</h5>
-                <button type="button" class="close hvr-grow" data-dismiss="modal" aria-label="Close">
+                <button class="close hvr-grow" data-dismiss="modal" aria-label="Close">
                     <span class="modal-dismiss-button" aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -307,17 +307,17 @@
                 <form onsubmit="submitfunction()" class="contact-form container-fluid" autocomplete="on">
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <input class="contact-form-element" type="text" id="first_name" name="fname" placeholder="First Name" aria-labelled="First Name" required autofocus>
+                            <input class="contact-form-element" type="text" id="first_name" name="fname" placeholder="First Name" required autofocus>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input class="contact-form-element" type="text" id="last_name" name="lname" placeholder="Last Name" aria-labelled="Last Name" required>
+                            <input class="contact-form-element" type="text" id="last_name" name="lname" placeholder="Last Name" required>
                         </div>
                         <div class="col-12 col-lg-6">
                             <!-- Credit: https://www.regular-expressions.info/email.html for pattern attribute regex -->
-                            <input class="contact-form-element" type="email" id="email" name="email" placeholder="Email Address" aria-labelled="Email Address" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                            <input class="contact-form-element" type="email" id="email" name="email" placeholder="Email Address" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input class="contact-form-element" type="tel" id="phone" name="phone" placeholder="Phone Number (optional)" aria-labelled="Phone Number">
+                            <input class="contact-form-element" type="tel" id="phone" name="phone" placeholder="Phone Number (optional)">
                         </div>
                         <div class="col-12">
                             <textarea class="contact-form-element" name="message" id="message" cols="23" rows="8" placeholder="Type your message here"></textarea>

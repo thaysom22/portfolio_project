@@ -127,6 +127,7 @@ header .hamburger-icon-wrapper{
     margin: 5px;
     border: none;   
     background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 /* Box shadow effect when dropdown navmenu is opened */
@@ -186,6 +187,7 @@ header .hamburger-icon{
     line-height: 32.8px;
     background-color: #f5f5f5;
     color: #0e1c36;
+    cursor: pointer;
     border-color: #9f7e69;
     -webkit-transition: background-color 0.3s ease-in;
     -o-transition: background-color 0.3s ease-in;
@@ -237,6 +239,7 @@ header .hamburger-icon{
     width: 75px;
     margin: auto 5px auto 1%;
     font-size: 1em;
+    cursor: pointer;
 }
 
 @media (min-width: 576px) and (max-width: 850px){
@@ -435,11 +438,12 @@ input.contact-form-element:not(#contact-form-submit){
     margin: 0 auto;
 }
 
-#jumbotron-text p{
+#jumbotron-text h4{
     color: #f5f5f5;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     margin: 10px 0;
+    line-height: 1.5em;
 }
 
 #jumbotron-CTA-button{
@@ -470,7 +474,7 @@ input.contact-form-element:not(#contact-form-submit){
         width: 45%;
     }
 
-    #jumbotron-text p{
+    #jumbotron-text h4{
         font-size: 20px;
     }
 }
@@ -514,7 +518,7 @@ input.contact-form-element:not(#contact-form-submit){
         border: 12px solid;
 	    border-color: #f5f5f5 #f5f5f5 transparent transparent;
     }
-    #jumbotron-text p{
+    #jumbotron-text h4{
         color: #0e1c36;
         font-size: 1.5rem;
         margin: 15px 0;

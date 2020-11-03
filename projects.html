@@ -29,12 +29,12 @@
         <div class="col-6 p-0 d-sm-none">
             <nav class="collapsed-navbar-wrapper navbar">
                 <!-- Contact modal trigger button (CREDIT: Bootstrap docs) -->
-                <div type="button" id="small-contact-modal-trigger" class="nav-link" data-dismiss="modal" data-toggle="modal" data-target="#contact-modal" tabindex="0">
+                <div id="small-contact-modal-trigger" class="nav-link" data-dismiss="modal" data-toggle="modal" data-target="#contact-modal" tabindex="0">
                     Contact
                 </div>
                 <!-- /Contact modal trigger button -->
                 <!-- Navbar toggler icon (CREDIT: Bootstrap docs)-->
-                <div type="button" class="hamburger-icon-wrapper navbar-toggler hvr-glow collapsed" data-toggle="collapse" data-target="#navbar-toggled" aria-label="Toggle navbar" aria-expanded="false" aria-controls="navbar-toggled">
+                <div role="button" class="hamburger-icon-wrapper navbar-toggler hvr-glow collapsed" data-toggle="collapse" data-target="#navbar-toggled" aria-label="Toggle navbar" aria-expanded="false" aria-controls="navbar-toggled">
                     <i class="fas fa-bars hamburger-icon"></i>
                 </div>
                 <!-- /Navbar toggler icon -->
@@ -50,7 +50,7 @@
                         <a href="blog.html" class="nav-link">Blog</a>                       
                         <a href="resume.html" class="nav-link">Resume</a>
                         <!-- Contact modal trigger -->
-                        <div type="button" class="nav-link" data-toggle="modal" data-target="#contact-modal" tabindex="0">
+                        <div class="nav-link" data-toggle="modal" data-target="#contact-modal" tabindex="0">
                             Contact
                         </div>
                         <!-- /Contact modal trigger    -->
@@ -228,7 +228,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="contact-modal-title">Contact me</h5>
-                <button type="button" class="close hvr-grow" data-dismiss="modal" aria-label="Close">
+                <button class="close hvr-grow" data-dismiss="modal" aria-label="Close">
                     <span class="modal-dismiss-button" aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -237,17 +237,17 @@
                 <form onsubmit="submitfunction()" class="contact-form container-fluid" autocomplete="on">
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <input class="contact-form-element" type="text" id="first_name" name="fname" placeholder="First Name" aria-labelled="First Name" required autofocus>
+                            <input class="contact-form-element" type="text" id="first_name" name="fname" placeholder="First Name" required autofocus>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input class="contact-form-element" type="text" id="last_name" name="lname" placeholder="Last Name" aria-labelled="Last Name" required>
+                            <input class="contact-form-element" type="text" id="last_name" name="lname" placeholder="Last Name" required>
                         </div>
                         <div class="col-12 col-lg-6">
                             <!-- Credit: https://www.regular-expressions.info/email.html for pattern attribute regex -->
-                            <input class="contact-form-element" type="email" id="email" name="email" placeholder="Email Address" aria-labelled="Email Address" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                            <input class="contact-form-element" type="email" id="email" name="email" placeholder="Email Address" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input class="contact-form-element" type="tel" id="phone" name="phone" placeholder="Phone Number (optional)" aria-labelled="Phone Number">
+                            <input class="contact-form-element" type="tel" id="phone" name="phone" placeholder="Phone Number (optional)">
                         </div>
                         <div class="col-12">
                             <textarea class="contact-form-element" name="message" id="message" cols="23" rows="8" placeholder="Type your message here"></textarea>
