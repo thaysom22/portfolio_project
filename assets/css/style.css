@@ -728,7 +728,7 @@ input.contact-form-element:not(#contact-form-submit){
     margin: 0;
 }
 
-.resume-section-header span{
+.resume-section-header span i{
     color:#9f7e69;
 }
 
@@ -781,6 +781,10 @@ input.contact-form-element:not(#contact-form-submit){
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+}
+
+#education-header-wrapper h4{
+    display: flex;
 }
 
 #more-about-image-wrapper{
@@ -898,6 +902,11 @@ input.contact-form-element:not(#contact-form-submit){
     color:#9f7e69;
 }
 
+#projects-row,
+#articles-row{
+    align-items: stretch;
+}
+
 .project-item-wrapper hr,
 .blog-item-wrapper hr{
     margin: 1rem auto;
@@ -907,6 +916,7 @@ input.contact-form-element:not(#contact-form-submit){
     display: block;
     max-width: 400px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .blog-item-caption,.project-item-caption{
