@@ -209,8 +209,8 @@ test without css stylesheet loading?
 
 ### Further testing
 
-On each page: color contrast
-html and css files manuallaly checked for comments, readability and errors
-
-Asked friends and family to use site on various devices and provide feedback. 
-
+* On a desktop, all elements of every page checked using Chrome Developer tools for contrast rations betweenforeground and background colors. 
+* HTML and CSS files manuallaly checked for clear and appropriate comments, code readability and errors. All commented out code removed.
+* Asked friends and family to use site on various devices and provide feedback:
+    *
+* Asked Code Institute  

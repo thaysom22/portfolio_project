@@ -754,20 +754,22 @@ input.contact-form-element:not(#contact-form-submit){
 
 /* Bullet points on employment and qualfication timelines */
 .employment::before,
-.qualification::before{
+.qualification::after{
     content: '';
     position: absolute;
     width: 0.75rem;
     height: 0.75rem;
     background-color: #9f7e69;
     border-radius: 50%;
-    left: -23.5px;
     top: 6px;
 }
 
-.qualification::before{
-    left: 362.4px;
-    top: 6px;
+.employment::before{
+    left: -23.5px;
+}
+
+.qualification::after{
+    right: -23.4px;
 }
 
 .resume-item-description{
@@ -798,7 +800,7 @@ input.contact-form-element:not(#contact-form-submit){
 
     /* Bullet points on employment and qualfication timelines */
     .employment::before,
-    .qualification::before{
+    .qualification::after{
         display: none;
     }
 
