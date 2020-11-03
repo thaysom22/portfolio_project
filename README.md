@@ -190,13 +190,11 @@ On desktop views the skills section becomes an extra column adjacent to the empl
 All pages
 
 * Color codes
-
     * F5F5F5 cultured
     * 0e1c36 oxford blue
     * 9f7e69 beaver
 
 * Font pairing
-
     * Headings: Lato (400,700)
     * Body: Roberto (400, 300)
 
