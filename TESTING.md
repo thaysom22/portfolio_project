@@ -188,7 +188,7 @@
     * On mobile, confirm that **Work History**, **Education**, **Skills** and **About me** subsections are displayed in a single full width column with some margins for text and headings. 
     * Ensure that header for each section is displayed in a pont size larger than text contained and icon is displayed. 
     * For **Work History** and **Education** sections, confirm that a vertical line is shown to the left/right of each entry with styled bullet points to create a timelines effect. Ensure that each entry is evenly and sufficiently spaced and readable. 
-    *Bug: Bullet points not displayed on timeline for **Education** subsection. Fix: Forgot to add to CSS! Added by using ::before elements with absolute positioning set.*
+    *Bug: Bullet points not displayed on timeline for **Education** subsection. Fix: Forgot to add to CSS! Added by using ::after elements with absolute positioning set.*
     * Confirm that image displayed centered below centered text in **About me** section. 
     * Repeat steps above on a tablet device. Confirm that **Work History** and **Education** sections display as two adjacent columns each with a border and horizontal margin; each without timelines and bullet points. 
     * Confirm that **Skills** and **About me** sections still both display full width. Confirm that in **Skills** section, small text moved next to each skill title and icon rather than below. Confirm that in **ABout me** section, image is moved next to text rather than below. 
@@ -209,8 +209,11 @@ test without css stylesheet loading?
 
 ### Further testing
 
-* On a desktop, all elements of every page checked using Chrome Developer tools for contrast rations betweenforeground and background colors. 
+* On a desktop, all elements of every page checked using Chrome Developer tools for contrast ratios between foreground and background colors. 
 * HTML and CSS files manuallaly checked for clear and appropriate comments, code readability and errors. All commented out code removed.
 * Asked friends and family to use site on various devices and provide feedback:
-    *
-* Asked Code Institute  
+    *Order of icons and headers inconsistent on resume page on desktop display. Fix: used Bootstrap order utility class to manipulate order in which DOM elements are displayed.*
+    *Site does not have a custom 404 error page to facilitate easy navigation back to homepage. Fix: 404.html page added to project.*
+* Asked Code Institute Slack community to peer review my completed website and code:
+    *Samsung Galaxy S20 Ultra and a 16" MacBook Pro - site works well on these devices.(Jack Sheehy)*
+    *Bug: Project/blog post boxes are not fixed height (andriy saltanchuk). Fix: made project/blog post boxes full height of containing row.*
