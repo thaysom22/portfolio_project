@@ -549,6 +549,11 @@ input.contact-form-element:not(#contact-form-submit){
     margin: 30px 0;
 }
 
+#main-content-row section{
+    display: flex;
+    justify-content: center;
+}
+
 .main-content-wrapper{
     text-align: center;
     color: #0e1c36;

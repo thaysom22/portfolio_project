@@ -200,12 +200,12 @@
 
 ## 'Automated' testing 
 
-code validators
+* All HTML files were passed through the [Official W3 HTML Validator](https://validator.w3.org/) and for version of project submitted for assessment no errors or warnings showing.
+    * `type="button"` attributes replaced with `role="button"` for modal and dropdown menu trigger buttons. 
+    * `aria-labelled-by` attribute removed from input elements
+    * `<time></time>` tag removed from literal of invalid format
 
-accessibility test?
-test without css stylesheet loading?
-
-- explain how to run these tests
+* style.css file was passed through the [Official Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) and for version of project submitted for assessment no errors or warnings showing.
 
 ### Further testing
 
