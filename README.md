@@ -267,12 +267,13 @@ Not worth doing yet as owner has not begun blogging!
 
 ### Code
 
-**CREDITS also provided in code comments**
+**CREDITS also referenced in code comments**
 
 * Responsive and collapsable navbar, toggled dropdown navigation menu, modal structure and functionality, responsive layout of sections - code adapted from templates provided in [Bootstrap documentation](https://getbootstrap.com/)
 * Regex used for validation in pattern attribute value of form copied and adapted from [regular-expressions.info](https://www.regular-expressions.info/email.html)
 * Custom Javascript function written into html to excecute when modal form in submitted and trigger browser alert copied and adapted from [W3schools code snippet](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_onsubmit)
 * CSS for hover and focus state transitions and transforms copied from [hover.css repository](https://github.com/IanLunn/Hover) and adapted. 
+* Custom backdrop blurring when modal open [StackOverflow article](https://stackoverflow.com/questions/19571955/how-to-make-modal-dialog-with-blur-background-using-twitter-bootstrap)
 
 ### Acknowledgements
 

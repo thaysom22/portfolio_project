@@ -9,7 +9,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400&display=swap');
 
-
 /* --- Global style rules --- */
 
 * {
@@ -41,7 +40,7 @@ a,a:hover{
     color: inherit;
 }
 
-/* Grow animation CREDIT: Hover.css (edited)*/
+/* Grow animation. CREDIT: Hover.css (edited)*/
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -64,7 +63,7 @@ a,a:hover{
             transition-timing-function: ease-in-out;
 }
 
-/* CREDIT: Hover.css */
+/* glow animation CREDIT: Hover.css */
 .hvr-glow {
   display: inline-block;
   vertical-align: middle;
@@ -89,7 +88,6 @@ a,a:hover{
         -ms-transform: scale(1.2);
             transform: scale(1.2);
 }
-
 
 /* --- Header --- */
 
@@ -119,8 +117,6 @@ header .collapsed-navbar-wrapper{
     padding: 0;
 }
 
-
-
 header .hamburger-icon-wrapper{
     text-align: center;
     height: 40px;
@@ -133,7 +129,7 @@ header .hamburger-icon-wrapper{
     background-color: #f5f5f5;
 }
 
-/* provides user feedback when dropdown navmenu is opened */
+/* Box shadow effect when dropdown navmenu is opened */
 header .hamburger-icon-wrapper:not(.collapsed){
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -173,7 +169,6 @@ header .hamburger-icon{
         justify-content: space-around;
 }
 
-
 .nav-links-wrapper .nav-link,
 .collapsed-navbar-wrapper .nav-link, 
 .toggled-nav-links-wrapper .nav-link{
@@ -211,11 +206,9 @@ header .hamburger-icon{
     outline: none;
 }
 
-
 .active{
     font-weight: 700;
 }
-
 
 #navbar-toggled{
     padding: 20px 14vw; 
@@ -240,37 +233,31 @@ header .hamburger-icon{
     line-height: 32.8px;
 }
 
-
 #small-contact-modal-trigger{
     width: 75px;
     margin: auto 5px auto 1%;
     font-size: 1em;
 }
 
-
 @media (min-width: 576px) and (max-width: 850px){
-    
     #logo-col{
         -webkit-box-flex: 0;
             -ms-flex: 0 0 33.333333%;
                 flex: 0 0 33.333333%;
         max-width: 33.333333%;
     }
-
     #expanded-navbar-col{
         -webkit-box-flex: 0;
             -ms-flex: 0 0 66.666667%;
                 flex: 0 0 66.666667%;
         max-width: 66.666667%;
     }
-
-    
 }
 
 /* --- Contact modal --- */
 
 /* Custom backdrop bluring when modal open*/
-/* CREDIT: https://stackoverflow.com/questions/19571955/how-to-make-modal-dialog-with-blur-background-using-twitter-bootstrap */
+/* CREDIT: Stack overflow article */
 body.modal-open #blur-modal-open-container{
     -moz-filter: blur(1px) grayscale(90%);
     -o-filter: blur(1px) grayscale(90%);
@@ -278,7 +265,6 @@ body.modal-open #blur-modal-open-container{
     -webkit-filter: blur(1px) grayscale(90%);
             filter: blur(1px) grayscale(90%);
 }
-
 
 .modal-content{
     background-color: #0e1c36;
@@ -367,11 +353,9 @@ input.contact-form-element:not(#contact-form-submit){
     .modal-dialog {
         max-width: 600px;
     }
-
     .contact-form-element#message{
         width: 400px;
     }
-
     #contact-form-submit{
         width: 80px;
         height: 43px;
@@ -379,18 +363,15 @@ input.contact-form-element:not(#contact-form-submit){
     }
 }
 
-
 @media (min-width: 992px){
-    
     .contact-form-element#message{
         width: 510px;
     }
-
 }
 
 /* --- Home hero section --- */
 
-/* CREDIT: Code Institute LOVE RUNNING walkthrough project for hero zoom out animation */
+/* CREDIT: Code Institute LOVE RUNNING walkthrough project for idea for hero zoom out animation */
 #hero-section-wrapper{
     position: relative;
     overflow: hidden;
@@ -447,14 +428,12 @@ input.contact-form-element:not(#contact-form-submit){
     bottom: 30px;
     width: 100%;
     text-align: center;
-
 }
 
 #jumbotron-text{
     width: 80%;
     margin: 0 auto;
 }
-
 
 #jumbotron-text p{
     color: #f5f5f5;
@@ -478,7 +457,6 @@ input.contact-form-element:not(#contact-form-submit){
     background-color: #0e1c36;
     color: #f5f5f5;
     border-color: #9f7e69;
-
 }
 
 #jumbotron-CTA-button:focus{
@@ -498,7 +476,6 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 @media (min-width: 600px){
-    
     #jumbotron-CTA-button{
         height: 50px;
         border-width: 3px;
@@ -507,17 +484,15 @@ input.contact-form-element:not(#contact-form-submit){
         line-height: 20px;
         
     }
-
 }
 
-/* CREDIT: Codepen: Chat Bubbles in CSS: https://codepen.io/Founts/pen/gmhcl */
+/* CREDIT: Codepen: Chat Bubbles in CSS */
 @media (min-width: 950px){
     #hero-jumbotron-wrapper{
         top: calc(30px + 0.05 * calc(100vw - 950px));
         left: calc(10px + 0.2 * calc(100vw - 950px));
         width: auto;
     }
-
     #jumbotron-text{
         display: inline-block;
         position: relative;
@@ -527,7 +502,6 @@ input.contact-form-element:not(#contact-form-submit){
         padding: 1.5em;
         border-radius: 30px;
     }
-
     #jumbotron-text::after{
         font-size: 2em;
         content: ' ';
@@ -540,17 +514,14 @@ input.contact-form-element:not(#contact-form-submit){
         border: 12px solid;
 	    border-color: #f5f5f5 #f5f5f5 transparent transparent;
     }
-
     #jumbotron-text p{
         color: #0e1c36;
         font-size: 1.5rem;
         margin: 15px 0;
     }
-
     #hero-image{
         height: calc(100vh - 80px);
     }
-
     #jumbotron-CTA-button{
         margin: 10px 0;
     }
@@ -564,7 +535,6 @@ input.contact-form-element:not(#contact-form-submit){
     margin: 0 auto;
     max-width: 650px;
     border-radius: 6px;
-    
 }
 
 .about-me-heading{
@@ -663,7 +633,6 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 @media (min-width: 700px) and (max-width: 991.99px){
-
     #main-content-row{
         border: solid 2px #9f7e69;
         border-radius: 5px;
@@ -675,19 +644,16 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 @media (min-width: 992px){
-
     .main-content-wrapper{
         margin: 0 5px 15px 5px;
         border: solid 2px #9f7e69;
         border-radius: 5px;
         padding: 10px 20px 0 20px;
     }
-
     .main-content-wrapper p{
         min-height: 6em;  
         margin-bottom: .5em;
         max-width: 350px;
-
     }
 }
 
@@ -735,7 +701,6 @@ input.contact-form-element:not(#contact-form-submit){
 .resume-item-title{
     font-size: 1.25em;
 }
-
 
 #employments-inner-wrapper{
     border-left: solid rgba(14,28,54,.6) 3px;
@@ -801,85 +766,65 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 @media (min-width: 768px){
-
     /* Bullet points on employment and qualfication timelines */
     .employment::before,
     .qualification::after{
         display: none;
     }
-
-
-    
     #work-history-wrapper,#education-wrapper{
         margin-bottom: 2em;
     }
-
     #employments-inner-wrapper{
         border: solid rgba(14,28,54,.6) 3px;
         padding-right: 1em; 
     }
-
     #qualifications-inner-wrapper{
         border: solid rgba(14,28,54,.6) 3px;
         padding-left: 1em; 
     }
-
     #work-history-header-wrapper,#education-header-wrapper{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
     }
-
     #skills-header-wrapper h4,#more-about-header-wrapper h4{
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
     .skill-header-wrapper h6{
         padding-left: 1rem;
     }
-
-
     .skill-text-wrapper>.resume-item-description{
         margin-top: 0;
     }
-
     .skill{
         margin: 2em 0;
     }
-
     #more-about-text-wrapper{
         margin: auto 0;
     }
-
 }
 
 @media (min-width: 992px){
-
     #more-about-text-wrapper>.resume-item-description{
         font-size: 1.125em;
         padding-left: 1em;
     }
-
     .skill-text-wrapper>.resume-item-description{
         padding-left: 1em;
     }
-
     #skills-inner-wrapper{
         border: solid rgba(14,28,54,.6) 3px;
     }
-
     #skills-header-wrapper{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
     }
-
     /* margin-bottom is 2em to fix collapsing margins */
     .skill {
     margin: 1em 0 2em 0;
     }
-
 }
 
 /* --- Blog and projects pages --- */
@@ -890,7 +835,6 @@ input.contact-form-element:not(#contact-form-submit){
     background-color: #0e1c36;
     padding-top: 1em;
     padding-bottom: 1em;
-
 }
 
 #blog-page-header>h4,#projects-page-header>h4{
@@ -928,7 +872,6 @@ input.contact-form-element:not(#contact-form-submit){
     font-weight: 700;
 }
 
-
 .blog-item-image,.project-item-image{
     background-position: center center;
     background-repeat: no-repeat;
@@ -944,7 +887,6 @@ input.contact-form-element:not(#contact-form-submit){
   -ms-transform: scale(1.05);
       transform: scale(1.05);
 }
-
 
 /* CREDIT: Unsplash for all blog and project images */
 #blog-image-1{
