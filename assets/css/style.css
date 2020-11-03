@@ -753,7 +753,8 @@ input.contact-form-element:not(#contact-form-submit){
 }
 
 /* Bullet points on employment and qualfication timelines */
-.employment::before{
+.employment::before,
+.qualification::before{
     content: '';
     position: absolute;
     width: 0.75rem;
@@ -761,6 +762,11 @@ input.contact-form-element:not(#contact-form-submit){
     background-color: #9f7e69;
     border-radius: 50%;
     left: -23.5px;
+    top: 6px;
+}
+
+.qualification::before{
+    left: 362.4px;
     top: 6px;
 }
 
@@ -791,7 +797,8 @@ input.contact-form-element:not(#contact-form-submit){
 @media (min-width: 768px){
 
     /* Bullet points on employment and qualfication timelines */
-    .employment::before{
+    .employment::before,
+    .qualification::before{
         display: none;
     }
 

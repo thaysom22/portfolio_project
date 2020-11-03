@@ -188,7 +188,7 @@
     * On mobile, confirm that **Work History**, **Education**, **Skills** and **About me** subsections are displayed in a single full width column with some margins for text and headings. 
     * Ensure that header for each section is displayed in a pont size larger than text contained and icon is displayed. 
     * For **Work History** and **Education** sections, confirm that a vertical line is shown to the left/right of each entry with styled bullet points to create a timelines effect. Ensure that each entry is evenly and sufficiently spaced and readable. 
-    *Bug: Bullet points not displayed on timeline for **Education** subsection. Fix: Forgot to add to HTML! Added by using ::after elements with absolute positioning set.*
+    *Bug: Bullet points not displayed on timeline for **Education** subsection. Fix: Forgot to add to CSS! Added by using ::before elements with absolute positioning set.*
     * Confirm that image displayed centered below centered text in **About me** section. 
     * Repeat steps above on a tablet device. Confirm that **Work History** and **Education** sections display as two adjacent columns each with a border and horizontal margin; each without timelines and bullet points. 
     * Confirm that **Skills** and **About me** sections still both display full width. Confirm that in **Skills** section, small text moved next to each skill title and icon rather than below. Confirm that in **ABout me** section, image is moved next to text rather than below. 
