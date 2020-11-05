@@ -705,6 +705,7 @@ input.contact-form-element:not(#contact-form-submit){
 
 .resume-section-header h4 span{
     font-family: 'Lato', sans-serif;
+    line-height: 1.2;
 }
 
 .resume-section-header span i{
