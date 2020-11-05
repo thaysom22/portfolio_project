@@ -703,8 +703,13 @@ input.contact-form-element:not(#contact-form-submit){
     margin: 0;
 }
 
+.resume-section-header h4 span{
+    font-family: 'Lato', sans-serif;
+}
+
 .resume-section-header span i{
     color:#9f7e69;
+    font-family: 'Lato', sans-serif;
 }
 
 .resume-item-title{
